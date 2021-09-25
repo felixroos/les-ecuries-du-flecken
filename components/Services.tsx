@@ -9,7 +9,11 @@ const Service = ({ heading, children }) => (
 );
 
 const ServiceImage = ({ src, alt }) => {
-  return <img src={src} alt={alt} />;
+  return (
+    <div className="h-96 w-full overflow-hidden relative">
+      <img src={src} alt={alt} />
+    </div>
+  );
   /* return (
     <div style={{ height: '100%' }}>
       <Parallax
@@ -33,13 +37,10 @@ export default function Services() {
           consequat.
         </p>
       </Service>
+      <ServiceImage alt="" src="./img/wanderreiten.png" />
       <ServiceImage
         alt=""
-        src="https://images.unsplash.com/photo-1594056009100-f25d3241e92f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2148&q=80"
-      />
-      <ServiceImage
-        alt=""
-        src="https://images.unsplash.com/photo-1541600593739-1d4c5177aae2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2370&q=80"
+        src="./img/box.JPG"
       />
       <Service heading="Pferde Pension">
         <p>
