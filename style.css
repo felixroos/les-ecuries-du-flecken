@@ -4,7 +4,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Gideon Roman', cursive;
+  /* font-family: 'Gideon Roman', cursive; */
+  font-family: 'Playfair Display SC', serif;
 }
 
 p,
@@ -12,4 +13,7 @@ li,
 a {
   font-family: 'Oxygen', sans-serif;
   font-weight: 400;
+}
+a {
+  font-weight: 700;
 }

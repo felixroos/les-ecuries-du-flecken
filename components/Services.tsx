@@ -9,7 +9,8 @@ const Service = ({ heading, children }) => (
 );
 
 const ServiceImage = ({ src, alt }) => {
-  return (
+  return <img src={src} alt={alt} />;
+  /* return (
     <div style={{ height: '100%' }}>
       <Parallax
         bgImage={src}
@@ -19,7 +20,7 @@ const ServiceImage = ({ src, alt }) => {
         style={{ height: '100%' }}
       ></Parallax>
     </div>
-  );
+  ); */
 };
 
 export default function Services() {
@@ -53,6 +54,14 @@ export default function Services() {
           <li>poulinage</li>
         </ul>
       </Service>
+      {/* <Service heading="Hallo">
+        <p>Das ist die Halle</p>
+      </Service>
+      <ServiceImage src="./img/72388f66-2e40-42f0-b9d9-78cf8a75c89b.JPG" alt="Halle" />
+      <ServiceImage src="./img/dbb0ba6f-4a54-4365-93c2-f9871cfb5eac.JPG" alt="Gang" />
+      <Service heading="Hallo">
+        <p>Das ist die Gang</p>
+      </Service> */}
     </div>
   );
 }

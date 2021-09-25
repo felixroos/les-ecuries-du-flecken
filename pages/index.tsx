@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import React from 'react';
 import Header from '../components/Header';
 import Services from '../components/Services';
+import Content from '../components/Content';
 
 export default function Home() {
   return (
@@ -14,12 +15,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="mb-4"></div>
-      <Services />
-      <div className="mb-4"></div>
-      <h1>Tourisme Equestre</h1>
-      <h1>Elevage</h1>
-      <h1>Contacts</h1>
+      <Content>
+        <div className="mb-4"></div>
+        <Services />
+        <div className="mb-4"></div>
+        <h1 className="text-4xl">Tourisme Equestre</h1>
+        <h1 className="text-4xl">Elevage</h1>
+        <h1 className="text-4xl">Kontakt</h1>
+        <h1 className="text-4xl mb-4">Anfahrt</h1>
+      </Content>
       <Map />
     </Layout>
   );
