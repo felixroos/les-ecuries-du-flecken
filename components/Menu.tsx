@@ -4,9 +4,11 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Fragment } from 'react';
 const icon = 'https://www.freeiconspng.com/thumbs/horse-icons/horse-icon-27.png';
 
+const navigation = ['Unser Hof', 'Pferde Pension', 'Zucht', 'Urlaub machen', 'Gallerie', 'Kontakt'];
+
 export default function Example() {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-white  z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -16,30 +18,17 @@ export default function Example() {
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Unser Hof
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Pferde Pension
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Zucht
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Urlaub machen
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Gallerie
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Kontakt
-            </a>
+            {navigation.map((label, i) => (
+              <a key={i} href="#" className="text-base font-medium hover:text-indigo-900 text-gray-900">
+                {label}
+              </a>
+            ))}
           </Popover.Group>
         </div>
       </div>
@@ -70,13 +59,11 @@ export default function Example() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricing
-                </a>
-
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
-                </a>
+                {navigation.map((label, i) => (
+                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                    {label}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
