@@ -8,7 +8,6 @@ export default function Layout({ children }) {
     <>
       <Menu />
       <Content>
-        <h1>Bing</h1>
         {children}
       </Content>
       <Footer />
