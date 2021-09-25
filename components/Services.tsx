@@ -2,18 +2,19 @@ import React from 'react';
 import { Parallax } from 'react-parallax';
 
 const Service = ({ heading, children }) => (
-  <div className="py-12 px-12">
+  <div className="p-6 md:p-12">
     <h1 className="text-4xl mb-4">{heading}</h1>
     <div className="text-lg">{children}</div>
   </div>
 );
 
 const ServiceImage = ({ src, alt }) => {
-  return (
+  return (<img src={src} alt={alt} />)
+  /* return (
     <div className="h-96 w-full overflow-hidden relative">
       <img src={src} alt={alt} />
     </div>
-  );
+  ); */
   /* return (
     <div style={{ height: '100%' }}>
       <Parallax
