@@ -1,6 +1,7 @@
 // pages/_document.js
 
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 class MyDocument extends Document {
   render() {

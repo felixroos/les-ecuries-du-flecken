@@ -6,7 +6,7 @@ const icon = 'https://www.freeiconspng.com/thumbs/horse-icons/horse-icon-27.png'
 
 export const navigation = ['Wanderreiten', 'Pension', 'Zucht', 'Unser Hof', 'Urlaub machen', 'Galerie', 'Kontakt'];
 
-export default function Example() {
+export default function Menu() {
   return (
     <div className="fixed w-full z-10">
       <Popover className="relative bg-white z-10">

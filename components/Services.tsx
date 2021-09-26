@@ -1,4 +1,5 @@
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 import Heading from './Heading';
 
 const Service = ({ heading, children, className }: any) => (
@@ -9,7 +10,11 @@ const Service = ({ heading, children, className }: any) => (
 );
 
 const ServiceImage = ({ src, alt, className }: any) => {
-  return <img src={src} alt={alt} className={`${className || ''}`} />;
+  return (
+    <Parallax className="overflow-hidden" y={[-16, 16]} tagOuter="figure">
+      <img src={src} alt={alt} className={`${className || ''}`} />
+    </Parallax>
+  );
   /* return (
     <div className="h-96 w-full overflow-hidden relative">
       <img src={src} alt={alt} />
