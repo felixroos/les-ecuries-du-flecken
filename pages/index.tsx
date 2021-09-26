@@ -13,14 +13,12 @@ import Partners from '../components/Partners';
 import MediaLeft from '../components/MediaLeft';
 import About from '../components/About';
 import Gallery from '../components/Gallery';
+import Anchor from '../components/Anchor';
 
-const Spacer = () => <div className="mb-4"></div>;
-const Section = ({ children, className, style }: any) => (
-  <section className={`text-center py-4 md:py-6 ${className}`} style={style}>
-    {children}
-  </section>
-);
+const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
+const Centered = ({ children }) => <div className="flex flex-col items-center">{children}</div>;
+const Slim = ({ children }) => <div className="max-w-lg">{children}</div>;
 
 export default function Home() {
   return (
@@ -34,57 +32,60 @@ export default function Home() {
       {/* <Header small /> */}
       <Content>
         <Spacer />
-        <Section>
+        <Centered>
           <Heading>Über Uns</Heading>
           <About />
-        </Section>
+        </Centered>
         <Divider />
         <Spacer />
         <Services />
         <Divider />
         <Spacer />
-        {/* <Section>
-          <Heading>Über Uns</Heading>
-          <About />
-        </Section> */}
-        <Section>
-          <Heading>Historie</Heading>
-          <div className="flex justify-center">
-            <div className="max-w-lg">
-              <History />
-            </div>
-          </div>
-        </Section>
-        <Divider />
-        <Spacer />
-        <Section>
+        <Centered>
+          <Anchor id="hof" />
           <Heading>Unser Hof</Heading>
-          <Gallery />
-        </Section>
+          <Slim>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          </Slim>
+        </Centered>
+        <Spacer />
+        <Gallery />
         <Divider />
         <Spacer />
-        <Section>
+        <Centered>
+          <Heading>Historie</Heading>
+          <Slim>
+            <History />
+          </Slim>
+        </Centered>
+        <Divider />
+        <Spacer />
+        <Centered>
+          <Heading>Anfahrt</Heading>
+          <Slim>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          </Slim>
+        </Centered>
+        <Spacer />
+        <Map />
+        {/* <Divider />
+        <Spacer />
+        <Centered>
           <Heading>Urlaub machen</Heading>
-        </Section>
+        </Centered>
         <Divider />
-        <Section>
+        <Centered>
           <Heading>Elevage</Heading>
-        </Section>
+        </Centered> */}
         <Divider />
-        <ParallaxImage src="./img/mampfen.jpg" />
         <Spacer />
-        <Section>
-          <div className="text-center">
-            <Heading>Partner</Heading>
-          </div>
-        </Section>
+        <Centered>
+          <Heading>Partner</Heading>
+        </Centered>
         <Partners />
         <Divider />
+        <ParallaxImage src="./img/mampfen.jpg" />
       </Content>
-      <div className="text-center mt-6">
-        <Heading>Anfahrt</Heading>
-      </div>
-      <Map />
     </Layout>
   );
 }

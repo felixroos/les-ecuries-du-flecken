@@ -4,7 +4,15 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Fragment } from 'react';
 const icon = 'https://www.freeiconspng.com/thumbs/horse-icons/horse-icon-27.png';
 
-export const navigation = ['Wanderreiten', 'Pension', 'Zucht', 'Unser Hof', 'Urlaub machen', 'Galerie', 'Kontakt'];
+export const navigation = [
+  { label: 'Wanderreiten', id: 'wanderreiten' },
+  { label: 'Pension', id: 'pension' },
+  { label: 'Urlaub machen', id: 'urlaub' },
+  { label: 'Unser Hof', id: 'hof' },
+  /* { label: 'Zucht', id: 'zucht' },
+  { label: 'Galerie', id: 'galerie' }, */
+  { label: 'Kontakt', id: 'footer' },
+];
 
 export default function Menu() {
   return (
@@ -26,8 +34,8 @@ export default function Menu() {
                 </Popover.Button>
               </div>
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
-                {navigation.map((label, i) => (
-                  <a key={i} href="#" className="text-base font-medium hover:text-indigo-900 text-gray-900">
+                {navigation.map(({ label, id }, i) => (
+                  <a key={i} href={`#${id}`} className="text-base font-medium hover:text-indigo-900 text-gray-900">
                     {label}
                   </a>
                 ))}

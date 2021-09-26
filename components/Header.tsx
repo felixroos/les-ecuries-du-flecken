@@ -5,7 +5,7 @@ import { Parallax } from 'react-scroll-parallax';
 //  bg-scroll md:bg-fixed
 export default function Header({ small }: any) {
   return (
-    <Parallax className="overflow-hidden" y={[-60, 60]} tagOuter="figure">
+    <Parallax className="overflow-hidden" y={[-60, 50]} tagOuter="figure">
       <header
         className="px-6 md:text-right pt-8 md:pt-12 bg-bottom bg-left bg-cover"
         style={{

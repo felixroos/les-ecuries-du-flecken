@@ -1,12 +1,16 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import Heading from './Heading';
+import Anchor from './Anchor';
 
-const Service = ({ heading, children, className }: any) => (
-  <div className={`p-6 md:p-12 ${className || ''}`}>
-    <Heading>{heading}</Heading>
-    <div className="text-lg">{children}</div>
-  </div>
+const Service = ({ heading, children, className, id }: any) => (
+  <>
+    <div className={`p-6 md:p-12 ${className || ''}`}>
+      <Anchor id={id} />
+      <Heading>{heading}</Heading>
+      <div className="text-lg">{children}</div>
+    </div>
+  </>
 );
 
 const ServiceImage = ({ src, alt, className }: any) => {
@@ -36,7 +40,7 @@ const ServiceImage = ({ src, alt, className }: any) => {
 export default function Services() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 items-center">
-      <Service heading="Wanderreiten" className="row-start-2 md:row-start-1">
+      <Service heading="Wanderreiten" className="row-start-2 md:row-start-1" id="wanderreiten">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -49,7 +53,7 @@ export default function Services() {
       <ServiceImage alt="" src="./img/wanderreiten.png" />
 
       <ServiceImage alt="" src="./img/box.jpg" />
-      <Service heading="Pension">
+      <Service heading="Pension" id="pension">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -65,7 +69,7 @@ export default function Services() {
           Jetzt anfragen
         </button>
       </Service>
-      <Service heading="Urlaub machen">
+      <Service heading="Urlaub machen" id="urlaub">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

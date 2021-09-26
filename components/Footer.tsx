@@ -5,7 +5,7 @@ import { navigation } from './Menu';
 
 export default function Example() {
   return (
-    <footer className="bg-gray-800" aria-labelledby="footer-heading">
+    <footer className="bg-gray-800" aria-labelledby="footer-heading" id="footer">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
