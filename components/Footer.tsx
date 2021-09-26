@@ -31,7 +31,7 @@ export default function Example() {
                   <li className="flex">
                     <MailIcon className="h-6 text-white mr-2" />{' '}
                     <a href="#" className="text-base text-gray-300 hover:text-white">
-                      les-ecuries-du-flecken@mail.fr
+                      lesecuriesduflecken@gmail.com
                     </a>
                   </li>
                   <li className="flex">
