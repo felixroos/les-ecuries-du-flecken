@@ -5,7 +5,7 @@ import Anchor from './Anchor';
 
 const Service = ({ heading, children, className, id }: any) => (
   <>
-    <div className={`p-6 md:p-12 ${className || ''}`}>
+    <div className={`py-8 md:p-6 ${className || ''}`}>
       <Anchor id={id} />
       <Heading>{heading}</Heading>
       <div className="text-lg">{children}</div>
@@ -14,32 +14,14 @@ const Service = ({ heading, children, className, id }: any) => (
 );
 
 const ServiceImage = ({ src, alt, className }: any) => {
-  return (
-    <Parallax className="overflow-hidden" y={[-16, 16]} tagOuter="figure">
-      <img src={src} alt={alt} className={`${className || ''}`} />
-    </Parallax>
-  );
-  /* return (
-    <div className="h-96 w-full overflow-hidden relative">
-      <img src={src} alt={alt} />
-    </div>
-  ); */
-  /* return (
-    <div style={{ height: '100%' }}>
-      <Parallax
-        bgImage={src}
-        bgImageAlt={alt}
-        bgStyle={{ backgroundPosition: 'bottom' }}
-        strength={100}
-        style={{ height: '100%' }}
-      ></Parallax>
-    </div>
-  ); */
+  /* <Parallax className="overflow-hidden" y={[-16, 16]} tagOuter="figure"> */
+  return <img src={src} alt={alt} className={`${className || ''}`} />;
+  /* </Parallax> */
 };
 
 export default function Services() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-2 items-center">
       <Service heading="Wanderreiten" className="row-start-2 md:row-start-1" id="wanderreiten">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

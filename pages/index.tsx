@@ -17,7 +17,7 @@ import Anchor from '../components/Anchor';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
-const Centered = ({ children }) => <div className="flex flex-col items-center">{children}</div>;
+const Centered = ({ children }) => <div className="flex flex-col md:items-center">{children}</div>;
 const Slim = ({ children }) => <div className="max-w-lg">{children}</div>;
 
 export default function Home() {
