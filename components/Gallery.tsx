@@ -5,7 +5,7 @@ const files = [
     source: './img/box.JPG',
   },
   {
-    title: 'Stall',
+    title: 'Halle',
     size: 'Mit toller Aussicht',
     source: './img/72388f66-2e40-42f0-b9d9-78cf8a75c89b.JPG',
   },

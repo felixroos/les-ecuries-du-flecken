@@ -16,10 +16,11 @@ import Gallery from '../components/Gallery';
 
 const Spacer = () => <div className="mb-4"></div>;
 const Section = ({ children, className, style }: any) => (
-  <section className={`text-center border-b-2 border-gray-100 py-6 ${className}`} style={style}>
+  <section className={`text-center py-6 ${className}`} style={style}>
     {children}
   </section>
 );
+const Divider = () => <div className={`border-b-2 border-gray-100 py-6`} />;
 
 export default function Home() {
   return (
@@ -37,9 +38,10 @@ export default function Home() {
           <Heading>Über Uns</Heading>
           <About />
         </Section>
-        <Section>
-          <Services />
-        </Section>
+        <Divider />
+        <Spacer />
+        <Services />
+        <Divider />
         <Spacer />
         {/* <Section>
           <Heading>Über Uns</Heading>
@@ -53,16 +55,20 @@ export default function Home() {
             </div>
           </div>
         </Section>
+        <Divider />
         <Section>
           <Heading>Unser Hof</Heading>
           <Gallery />
         </Section>
+        <Divider />
         <Section>
           <Heading>Urlaub machen</Heading>
         </Section>
+        <Divider />
         <Section>
           <Heading>Elevage</Heading>
         </Section>
+        <Divider />
         <ParallaxImage src="./img/86117c36-b9e5-49ab-9c63-679babf2781b.JPG" />
         <Spacer />
         <Section>
@@ -71,6 +77,7 @@ export default function Home() {
           </div>
           <Partners />
         </Section>
+        <Divider />
       </Content>
       <div className="text-center mt-6">
         <Heading>Anfahrt</Heading>
