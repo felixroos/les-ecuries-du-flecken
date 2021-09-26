@@ -16,11 +16,11 @@ import Gallery from '../components/Gallery';
 
 const Spacer = () => <div className="mb-4"></div>;
 const Section = ({ children, className, style }: any) => (
-  <section className={`text-center py-6 ${className}`} style={style}>
+  <section className={`text-center py-4 md:py-6 ${className}`} style={style}>
     {children}
   </section>
 );
-const Divider = () => <div className={`border-b-2 border-gray-100 py-6`} />;
+const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
 
 export default function Home() {
   return (
@@ -50,17 +50,19 @@ export default function Home() {
         <Section>
           <Heading>Historie</Heading>
           <div className="flex justify-center">
-            <div className="max-w-lg mb-6">
+            <div className="max-w-lg">
               <History />
             </div>
           </div>
         </Section>
         <Divider />
+        <Spacer />
         <Section>
           <Heading>Unser Hof</Heading>
           <Gallery />
         </Section>
         <Divider />
+        <Spacer />
         <Section>
           <Heading>Urlaub machen</Heading>
         </Section>

@@ -1,15 +1,15 @@
 import React from 'react';
 import Heading from './Heading';
 
-const Service = ({ heading, children }) => (
-  <div className="p-6 md:p-12">
+const Service = ({ heading, children, className }: any) => (
+  <div className={`p-6 md:p-12 ${className || ''}`}>
     <Heading>{heading}</Heading>
     <div className="text-lg">{children}</div>
   </div>
 );
 
-const ServiceImage = ({ src, alt }) => {
-  return <img src={src} alt={alt} />;
+const ServiceImage = ({ src, alt, className }: any) => {
+  return <img src={src} alt={alt} className={`${className || ''}`} />;
   /* return (
     <div className="h-96 w-full overflow-hidden relative">
       <img src={src} alt={alt} />
@@ -30,8 +30,8 @@ const ServiceImage = ({ src, alt }) => {
 
 export default function Services() {
   return (
-    <div className="grid md:grid-cols-2 gap-4 md:gap-0 items-center">
-      <Service heading="Wanderreiten">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 items-center">
+      <Service heading="Wanderreiten" className="row-start-2 md:row-start-1">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -42,6 +42,7 @@ export default function Services() {
         </button>
       </Service>
       <ServiceImage alt="" src="./img/wanderreiten.png" />
+
       <ServiceImage alt="" src="./img/box.jpg" />
       <Service heading="Pension">
         <p>
@@ -69,15 +70,7 @@ export default function Services() {
           Jetzt anfragen
         </button>
       </Service>
-      <ServiceImage alt="" src="./img/urlaub.jpg" />
-      {/* <Service heading="Hallo">
-        <p>Das ist die Halle</p>
-      </Service>
-      <ServiceImage src="./img/72388f66-2e40-42f0-b9d9-78cf8a75c89b.JPG" alt="Halle" />
-      <ServiceImage src="./img/dbb0ba6f-4a54-4365-93c2-f9871cfb5eac.JPG" alt="Gang" />
-      <Service heading="Hallo">
-        <p>Das ist die Gang</p>
-      </Service> */}
+      <ServiceImage alt="" src="./img/urlaub.jpg" className="row-start-5 md:row-start-3 md:col-start-2" />
     </div>
   );
 }

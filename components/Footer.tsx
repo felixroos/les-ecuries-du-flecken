@@ -12,20 +12,8 @@ export default function Example() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-2 xl:gap-8">
           <div className="grid grid-cols-1 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-3 md:gap-8">
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Navigation</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.map((label, i) => (
-                    <li key={i}>
-                      <a href="#" className="text-base text-gray-300 hover:text-white">
-                        {label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Kontakt</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   <li className="flex">
@@ -53,6 +41,19 @@ export default function Example() {
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Nachricht schreiben</h3>
                 <Contact />
               </div>
+              {/*    <div className="mt-12 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Navigation</h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {navigation.map((label, i) => (
+                    <li key={i}>
+                      <a href="#" className="text-base text-gray-300 hover:text-white">
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            */}{' '}
             </div>
           </div>
         </div>
