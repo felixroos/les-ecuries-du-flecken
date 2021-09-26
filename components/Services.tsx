@@ -1,15 +1,16 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
+import Heading from './Heading';
 
 const Service = ({ heading, children }) => (
   <div className="p-6 md:p-12">
-    <h1 className="text-4xl mb-4">{heading}</h1>
+    <Heading>{heading}</Heading>
     <div className="text-lg">{children}</div>
   </div>
 );
 
 const ServiceImage = ({ src, alt }) => {
-  return (<img src={src} alt={alt} />)
+  return <img src={src} alt={alt} />;
   /* return (
     <div className="h-96 w-full overflow-hidden relative">
       <img src={src} alt={alt} />
@@ -37,13 +38,13 @@ export default function Services() {
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.
         </p>
+        <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          Jetzt anfragen
+        </button>
       </Service>
       <ServiceImage alt="" src="./img/wanderreiten.png" />
-      <ServiceImage
-        alt=""
-        src="./img/box.JPG"
-      />
-      <Service heading="Pferde Pension">
+      <ServiceImage alt="" src="./img/box.JPG" />
+      <Service heading="Pension">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -55,7 +56,21 @@ export default function Services() {
           <li>poulains / jeunes chevaux</li>
           <li>poulinage</li>
         </ul>
+        <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          Jetzt anfragen
+        </button>
       </Service>
+      <Service heading="Urlaub machen">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          Jetzt anfragen
+        </button>
+      </Service>
+      <ServiceImage alt="" src="./img/4fdbbc43-ba55-4ff6-bee2-81a168db1186.JPG" />
       {/* <Service heading="Hallo">
         <p>Das ist die Halle</p>
       </Service>

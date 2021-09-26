@@ -4,15 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#D0C0B0',
+        primary: '#323528',
+        secondary: '#D0C0B0',
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    // ...
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 };

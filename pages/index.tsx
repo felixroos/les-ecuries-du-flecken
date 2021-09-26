@@ -5,6 +5,21 @@ import React from 'react';
 import Header from '../components/Header';
 import Services from '../components/Services';
 import Content from '../components/Content';
+import ParallaxImage from '../components/ParallaxImage';
+import Heading from '../components/Heading';
+import Contact from '../components/Contact';
+import History from '../components/History';
+import Partners from '../components/Partners';
+import MediaLeft from '../components/MediaLeft';
+import About from '../components/About';
+import Gallery from '../components/Gallery';
+
+const Spacer = () => <div className="mb-4"></div>;
+const Section = ({ children, className, style }: any) => (
+  <section className={`text-center border-b-2 border-gray-100 py-6 ${className}`} style={style}>
+    {children}
+  </section>
+);
 
 export default function Home() {
   return (
@@ -15,15 +30,51 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      {/* <Header small /> */}
       <Content>
-        <div className="mb-4"></div>
-        <Services />
-        <div className="mb-4"></div>
-        <h1 className="text-4xl">Tourisme Equestre</h1>
-        <h1 className="text-4xl">Elevage</h1>
-        <h1 className="text-4xl">Kontakt</h1>
-        <h1 className="text-4xl mb-4">Anfahrt</h1>
+        <Spacer />
+        <Section>
+          <Heading>Über Uns</Heading>
+          <About />
+        </Section>
+        <Section>
+          <Services />
+        </Section>
+        <Spacer />
+        {/* <Section>
+          <Heading>Über Uns</Heading>
+          <About />
+        </Section> */}
+        <Section>
+          <Heading>Historie</Heading>
+          <div className="flex justify-center">
+            <div className="max-w-lg mb-6">
+              <History />
+            </div>
+          </div>
+        </Section>
+        <Section>
+          <Heading>Unser Hof</Heading>
+          <Gallery />
+        </Section>
+        <Section>
+          <Heading>Urlaub machen</Heading>
+        </Section>
+        <Section>
+          <Heading>Elevage</Heading>
+        </Section>
+        <ParallaxImage src="./img/86117c36-b9e5-49ab-9c63-679babf2781b.JPG" />
+        <Spacer />
+        <Section>
+          <div className="text-center">
+            <Heading>Partner</Heading>
+          </div>
+          <Partners />
+        </Section>
       </Content>
+      <div className="text-center mt-6">
+        <Heading>Anfahrt</Heading>
+      </div>
       <Map />
     </Layout>
   );

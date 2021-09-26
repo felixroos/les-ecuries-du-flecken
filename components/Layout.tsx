@@ -7,7 +7,7 @@ import Wrapper from './Wrapper';
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-primary">
+    <div className="bg-secondary">
       <Menu />
       <Wrapper>{children}</Wrapper>
       <Footer />

@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Fragment } from 'react';
 const icon = 'https://www.freeiconspng.com/thumbs/horse-icons/horse-icon-27.png';
 
-const navigation = ['Unser Hof', 'Pferde Pension', 'Zucht', 'Urlaub machen', 'Gallerie', 'Kontakt'];
+export const navigation = ['Wanderreiten', 'Pension', 'Zucht', 'Unser Hof', 'Urlaub machen', 'Gallerie', 'Kontakt'];
 
 export default function Example() {
   return (
