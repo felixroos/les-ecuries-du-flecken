@@ -1,5 +1,4 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
 import Heading from './Heading';
 
 const Service = ({ heading, children }) => (
@@ -43,7 +42,7 @@ export default function Services() {
         </button>
       </Service>
       <ServiceImage alt="" src="./img/wanderreiten.png" />
-      <ServiceImage alt="" src="./img/box.JPG" />
+      <ServiceImage alt="" src="./img/box.jpg" />
       <Service heading="Pension">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -70,7 +69,7 @@ export default function Services() {
           Jetzt anfragen
         </button>
       </Service>
-      <ServiceImage alt="" src="./img/4fdbbc43-ba55-4ff6-bee2-81a168db1186.JPG" />
+      <ServiceImage alt="" src="./img/urlaub.jpg" />
       {/* <Service heading="Hallo">
         <p>Das ist die Halle</p>
       </Service>

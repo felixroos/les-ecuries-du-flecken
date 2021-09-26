@@ -2,22 +2,22 @@ const files = [
   {
     title: 'Boxen',
     size: 'Insgesamt 1000 Stellplätze',
-    source: './img/box.JPG',
+    source: './img/box.jpg',
   },
   {
     title: 'Halle',
     size: 'Mit toller Aussicht',
-    source: './img/72388f66-2e40-42f0-b9d9-78cf8a75c89b.JPG',
+    source: './img/halle.jpg',
   },
   {
     title: 'Koppel',
     size: 'Unendlich weiter Wiesen',
-    source: './img/0e8a0425-c30a-4ec2-9a42-bf4dfdaebc47.JPG',
+    source: './img/koppel.jpg',
   },
   {
     title: 'Ball',
     size: 'Gegen die Langeweile',
-    source: './img/31a57abb-4cb9-4e0d-a1e3-1ea0a1ba5b5f.JPG',
+    source: './img/ball.jpg',
   },
 ];
 

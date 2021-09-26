@@ -69,7 +69,7 @@ export default function Home() {
           <Heading>Elevage</Heading>
         </Section>
         <Divider />
-        <ParallaxImage src="./img/86117c36-b9e5-49ab-9c63-679babf2781b.JPG" />
+        <ParallaxImage src="./img/mampfen.jpg" />
         <Spacer />
         <Section>
           <div className="text-center">
