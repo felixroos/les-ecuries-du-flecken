@@ -8,7 +8,7 @@ import { Parallax } from 'react-scroll-parallax';
 export default function ParallaxImage({ src }) {
   return (
     <section
-      className="p-6 bg-bottom bg-left bg-cover bg-scroll md:bg-fixed"
+      className="p-6 bg-bottom bg-left bg-cover bg-scroll xl:bg-fixed"
       style={{
         height: '400px',
         backgroundImage: `url(${src})`,
