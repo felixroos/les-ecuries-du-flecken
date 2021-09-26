@@ -75,8 +75,8 @@ export default function Home() {
           <div className="text-center">
             <Heading>Partner</Heading>
           </div>
-          <Partners />
         </Section>
+        <Partners />
         <Divider />
       </Content>
       <div className="text-center mt-6">

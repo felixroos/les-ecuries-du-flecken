@@ -17,10 +17,10 @@ export default function Partners() {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-3 gap-8 md:grid-cols-3 lg:grid-cols-3">
+        <div className="grid grid-cols-3 gap-4 md:grid-cols-3 lg:grid-cols-3">
           {partners.map((partner, i) => (
-            <div key={i} className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-24" src={partner.logo} alt={partner.name} />
+            <div key={i} className="col-span-1 place-items-center grid md:col-span-2 lg:col-span-1 max-h-24 overflow-hidden">
+              <img className="max-h-24 max-w-24" src={partner.logo} alt={partner.name} />
             </div>
           ))}
         </div>

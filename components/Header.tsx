@@ -2,10 +2,10 @@
 export default function Header({ small }: any) {
   return (
     <header
-      className="px-6 md:text-right pt-8 md:pt-16 bg-bottom bg-left bg-cover bg-fixed"
+      className="px-6 md:text-right pt-8 md:pt-16 bg-bottom bg-left bg-cover bg-scroll md:bg-fixed"
       style={{
-        height: small ? '280px' : '800px',
-        backgroundImage: `url(./img/header.jpg)`,
+        height: small ? '280px' : '700px',
+        backgroundImage: `url(./img/header2.jpg)`,
         // backgroundImage: `url(./img/934e1bd9-75b2-4536-b19d-a8536feb94b9.JPG)`,
       }}
     >
