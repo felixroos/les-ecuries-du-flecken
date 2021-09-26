@@ -1,4 +1,4 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: '/docs',
+  basePath: '/les-ecuries-du-flecken',
 };
