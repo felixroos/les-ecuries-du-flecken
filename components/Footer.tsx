@@ -3,6 +3,9 @@ import React from 'react';
 import Contact from './Contact';
 import { navigation } from './Menu';
 
+// SCEA LES ECURIES DU FLECKEN
+// SIRET 87946357800010
+
 export default function Example() {
   return (
     <footer className="bg-gray-800" aria-labelledby="footer-heading" id="footer">
@@ -25,7 +28,7 @@ export default function Example() {
                   <li className="flex">
                     <PhoneIcon className="h-6 text-white mr-2" />{' '}
                     <a href="#" className="text-base text-gray-300 hover:text-white">
-                      +33 00000000
+                      06 99 93 64 34 / 06 50 15 85 56
                     </a>
                   </li>
                   <li className="flex">

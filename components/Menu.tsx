@@ -7,7 +7,7 @@ const icon = 'https://www.freeiconspng.com/thumbs/horse-icons/horse-icon-27.png'
 export const navigation = [
   { label: 'Wanderreiten', id: 'wanderreiten' },
   { label: 'Pension', id: 'pension' },
-  { label: 'Urlaub machen', id: 'urlaub' },
+  /* { label: 'Urlaub machen', id: 'urlaub' }, */
   { label: 'Unser Hof', id: 'hof' },
   { label: 'Kontakt', id: 'footer' },
 ];

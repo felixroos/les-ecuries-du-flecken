@@ -14,6 +14,7 @@ import MediaLeft from '../components/MediaLeft';
 import About from '../components/About';
 import Gallery from '../components/Gallery';
 import Anchor from '../components/Anchor';
+import Pension from '../components/Pension';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
@@ -33,7 +34,7 @@ export default function Home() {
       <Content>
         <Spacer />
         <Centered>
-          <Heading>Über Uns</Heading>
+          <Heading>Présentation / Über uns</Heading>
           <About />
         </Centered>
         <Divider />
@@ -45,7 +46,20 @@ export default function Home() {
           <Anchor id="hof" />
           <Heading>Unser Hof</Heading>
           <Slim>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            = Galerie
+            <br />
+            <ul>
+              <li>Manège éclairé avec barres, chandeliers, plots, …</li>
+              <li>Paddocks</li>
+              <li>Douche et aire de pansage</li>
+              <li>Structure labellisée Tourisme Equestre</li>
+              <li>Plusieurs hectares de pâtures vallonées et clôturées (3 fils électrifiés sur secteur)</li>
+              <li>Foin de qualité supérieure entièrement produit sur la ferme</li>
+              <li>Structure sous vidéosurveillance et présence 24h/24</li>
+              <li>
+                Ecuries ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)
+              </li>
+            </ul>
           </Slim>
         </Centered>
         <Spacer />
@@ -60,6 +74,13 @@ export default function Home() {
         </Centered>
         <Divider />
         <Spacer />
+
+        <Centered>
+          <Heading>Pension</Heading>
+          <Pension />
+        </Centered>
+        <Spacer />
+
         <Centered>
           <Heading>Anfahrt</Heading>
           <Slim>
