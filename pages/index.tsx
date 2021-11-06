@@ -75,10 +75,8 @@ export default function Home() {
         <Divider />
         <Spacer />
 
-        <Centered>
-          <Heading>Pension</Heading>
-          <Pension />
-        </Centered>
+        <Pension />
+        <Divider />
         <Spacer />
 
         <Centered>
