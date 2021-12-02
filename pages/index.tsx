@@ -14,6 +14,7 @@ import Gallery from '../components/Gallery';
 import Anchor from '../components/Anchor';
 import Pension from '../components/Pension';
 import { useLocales } from './api/useLocales';
+import TrailRiding from '../components/TrailRiding';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
@@ -47,8 +48,11 @@ export default function Home() {
         <Spacer />
         <Centered>
           <Anchor id="hof" />
-          <Heading>Unser Hof</Heading>
-          <Slim>
+          <Heading>
+            {de && 'Unser Hof'}
+            {fr && 'Nos Installations'}
+          </Heading>
+          {/* <Slim>
             = Galerie
             <br />
             <ul>
@@ -63,7 +67,7 @@ export default function Home() {
                 Ecuries ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)
               </li>
             </ul>
-          </Slim>
+          </Slim> */}
         </Centered>
         <Spacer />
         <Gallery />
@@ -81,28 +85,28 @@ export default function Home() {
         <Pension />
         <Divider />
         <Spacer />
+        <TrailRiding />
+        <Divider />
+        <Spacer />
 
         <Centered>
-          <Heading>Anfahrt</Heading>
-          <Slim>
+          <Heading>
+            {de && 'Anfahrt'}
+            {fr && <>Plan d&apos;accès</>}
+          </Heading>
+          {/* <Slim>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </Slim>
+          </Slim> */}
         </Centered>
         <Spacer />
         <Map />
-        {/* <Divider />
-        <Spacer />
-        <Centered>
-          <Heading>Urlaub machen</Heading>
-        </Centered>
-        <Divider />
-        <Centered>
-          <Heading>Elevage</Heading>
-        </Centered> */}
         <Divider />
         <Spacer />
         <Centered>
-          <Heading>Partner</Heading>
+          <Heading>
+            {de && 'Partner'}
+            {fr && 'Nos Partenaires'}
+          </Heading>
         </Centered>
         <Partners />
         <Divider />

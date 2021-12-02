@@ -4,8 +4,8 @@ import { useLocales } from '../pages/api/useLocales';
 const About = () => {
   const [fr, de] = useLocales();
   return (
-    <div className="flex justify-center">
-      <div className="max-w-lg">
+    <div className="flex justify-center text-lg">
+      <div className="max-w-xl">
         {de && (
           <p>
             In Lembach, inmitten der grünen Berge der Nordvogesen, liegt unser familiärer Betrieb von beschaulicher
@@ -18,7 +18,7 @@ const About = () => {
           <p>
             Située à Lembach (F-67510) dans le magnifique Parc naturel régional des Vosges du Nord, notre structure à
             taille humaine se veut avant tout être un havre de paix, où la beauté du paysage suffit à se ressourcer au
-            contact de son compagnon à sabots. Le bien-être de votre cheval ? Nous en faisons notre priorité.
+            contact de son compagnon à sabots. Le bien-être de votre cheval? Nous en faisons notre priorité.
           </p>
         )}
         {/* <p>

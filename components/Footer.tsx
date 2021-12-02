@@ -1,12 +1,14 @@
 import { MailIcon, MapIcon, PhoneIcon } from '@heroicons/react/outline';
 import React from 'react';
+import { useLocales } from '../pages/api/useLocales';
 import Contact from './Contact';
 import { navigation } from './Menu';
 
 // SCEA LES ECURIES DU FLECKEN
 // SIRET 87946357800010
 
-export default function Example() {
+export default function Footer() {
+  const [fr, de] = useLocales();
   return (
     <footer className="bg-gray-800" aria-labelledby="footer-heading" id="footer">
       <h2 id="footer-heading" className="sr-only">
@@ -17,7 +19,10 @@ export default function Example() {
           <div className="grid grid-cols-1 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Kontakt</h3>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  {de && 'Kontakt'}
+                  {fr && 'Contact'}
+                </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   <li className="flex">
                     <MailIcon className="h-6 text-white mr-2" />{' '}
@@ -41,7 +46,10 @@ export default function Example() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Nachricht schreiben</h3>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  {fr && 'Écrire un message'}
+                  {de && 'Nachricht schreiben'}
+                </h3>
                 <Contact />
               </div>
               {/*    <div className="mt-12 md:mt-0">

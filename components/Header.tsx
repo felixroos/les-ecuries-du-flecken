@@ -15,9 +15,8 @@ export default function Header({ small }: any) {
         backgroundImage: `url(./img/header2.jpg)`,
       }}
     >
-      {/* <h1 className="text-black text-4xl md:text-5xl text-primary">Reiten & Wandern im Elsass</h1> */}
       <h1 className="text-black text-4xl md:text-5xl text-primary">Les Ecuries du Flecken</h1>
-      <h2 className="text-2xl md:text-3xl text-primary">Reiten & Wandern im Elsass</h2>
+      {/* <h2 className="text-2xl md:text-3xl text-primary">Reiten & Wandern im Elsass</h2> */}
     </header>
   );
   /* </Parallax> */

@@ -2,20 +2,32 @@
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import React, { Fragment } from 'react';
+import { useLocales } from '../pages/api/useLocales';
 import { LanguageSwitcher } from './Flags';
 const icon = 'https://www.freeiconspng.com/thumbs/horse-icons/horse-icon-27.png';
-
-export const navigation = [
-  { label: 'Wanderreiten', id: 'wanderreiten' },
-  { label: 'Pension', id: 'pension' },
-  /* { label: 'Urlaub machen', id: 'urlaub' }, */
-  { label: 'Unser Hof', id: 'hof' },
-  { label: 'Kontakt', id: 'footer' },
-];
 
 //  className="flex items-center"
 
 export default function Menu() {
+  const [fr, de] = useLocales();
+  const navigation = [
+    ...(!de
+      ? []
+      : [
+          { label: 'Wanderreiten', id: 'wanderreiten' },
+          { label: 'Pension', id: 'pension' },
+          { label: 'Unser Hof', id: 'hof' },
+          { label: 'Kontakt', id: 'footer' },
+        ]),
+    ...(!fr
+      ? []
+      : [
+          { label: 'Tourisme Equestre', id: 'wanderreiten' },
+          { label: 'Pension', id: 'pension' },
+          { label: 'Nos Installations', id: 'hof' },
+          { label: 'Contact', id: 'footer' },
+        ]),
+  ];
   return (
     <div className="fixed w-full z-10">
       <Popover className="relative bg-white z-10">
