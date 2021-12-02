@@ -8,13 +8,13 @@ export function classNames(...classes) {
 
 export const LanguageSwitcher = () => {
   const [fr, de] = useLocales();
-  const avatar = 'w-8 h-8 rounded-full overflow-hidden';
+  const avatar = 'w-8 h-8 rounded-md overflow-hidden gap-0';
   const activeStyle = 'border-2 border-primary';
   const inactiveStyle = 'border-2 border-gray-200';
   return (
     <div className="flex space-x-2">
       <Link href="/fr">
-        <a className={classNames(avatar, 'grid grid-cols-3', fr ? activeStyle : inactiveStyle)}>
+        <a className={classNames(avatar, 'grid grid-cols-3 bg-red-600', fr ? activeStyle : inactiveStyle)}>
           <div className="bg-blue-900"></div>
           <div className="bg-white"></div>
           <div className="bg-red-600"></div>

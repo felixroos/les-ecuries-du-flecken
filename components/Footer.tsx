@@ -2,7 +2,6 @@ import { MailIcon, MapIcon, PhoneIcon } from '@heroicons/react/outline';
 import React from 'react';
 import { useLocales } from '../pages/api/useLocales';
 import Contact from './Contact';
-import { navigation } from './Menu';
 
 // SCEA LES ECURIES DU FLECKEN
 // SIRET 87946357800010
@@ -10,7 +9,7 @@ import { navigation } from './Menu';
 export default function Footer() {
   const [fr, de] = useLocales();
   return (
-    <footer className="bg-gray-800" aria-labelledby="footer-heading" id="footer">
+    <footer className="bg-primary" aria-labelledby="footer-heading" id="footer">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>

@@ -15,6 +15,7 @@ import Anchor from '../components/Anchor';
 import Pension from '../components/Pension';
 import { useLocales } from './api/useLocales';
 import TrailRiding from '../components/TrailRiding';
+import AboutMore from '../components/AboutMore';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
@@ -36,8 +37,8 @@ export default function Home() {
         <Spacer />
         <Centered>
           <Heading>
-            {de && 'Über uns'}
-            {fr && 'Présentation'}
+            {de && 'Willkommen auf unserem Hof'}
+            {fr && 'Bienvenue à notre écurie'}
           </Heading>
           <About />
         </Centered>
@@ -86,6 +87,9 @@ export default function Home() {
         <Divider />
         <Spacer />
         <TrailRiding />
+        <Divider />
+        <Spacer />
+        <AboutMore />
         <Divider />
         <Spacer />
 
