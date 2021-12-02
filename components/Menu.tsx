@@ -1,7 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
+import { LanguageSwitcher } from './Flags';
 const icon = 'https://www.freeiconspng.com/thumbs/horse-icons/horse-icon-27.png';
 
 export const navigation = [
@@ -34,12 +35,13 @@ export default function Menu() {
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <Popover.Group as="nav" className="hidden md:flex space-x-10">
+              <Popover.Group as="nav" className="hidden md:flex space-x-10 items-center">
                 {navigation.map(({ label, id }, i) => (
                   <a key={i} href={`#${id}`} className="text-base font-medium hover:text-indigo-900 text-gray-900">
                     {label}
                   </a>
                 ))}
+                <LanguageSwitcher />
               </Popover.Group>
             </div>
           </div>

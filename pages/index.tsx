@@ -7,14 +7,13 @@ import Services from '../components/Services';
 import Content from '../components/Content';
 import ParallaxImage from '../components/ParallaxImage';
 import Heading from '../components/Heading';
-import Contact from '../components/Contact';
 import History from '../components/History';
 import Partners from '../components/Partners';
-import MediaLeft from '../components/MediaLeft';
 import About from '../components/About';
 import Gallery from '../components/Gallery';
 import Anchor from '../components/Anchor';
 import Pension from '../components/Pension';
+import { useLocale } from './api/useLocales';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;

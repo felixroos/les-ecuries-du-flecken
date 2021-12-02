@@ -1,23 +1,26 @@
 import { useRouter } from 'next/dist/client/router';
+import { useLocale } from '../pages/api/useLocales';
 
 const About = () => {
-  const { locale } = useRouter();
-  console.log('locale', locale);
+  const [locale] = useLocale();
   return (
     <div className="flex justify-center">
       <div className="max-w-lg">
-        {/* <p>
-        Située à Lembach (F-67510) dans le magnifique Parc naturel régional des Vosges du Nord, notre structure à taille
-        humaine se veut avant tout être un havre de paix, où la beauté du paysage suffit à se ressourcer au contact de
-        son compagnon à sabots. Le bien-être de votre cheval ? Nous en faisons notre priorité.
-      </p> */}
-        <p>
-          In Lembach, inmitten der grünen Bergen der Nordvogesen, liegt unser familiärer Betrieb von beschaulicher
-          Größe, der seinen Besuchern vor allem Ruhe bietet. Umgeben von der Schönheit der weiten Landschaft lässt es
-          sich, zusammen mit seinem vierhufigen Begleiter, hervorragend entspannen. Das Wohlbefinden Ihres Pferdes?
-          Liegt uns sehr am Herzen und hat bei uns oberste Priorität.
-        </p>
-
+        {locale === 'de' && (
+          <p>
+            In Lembach, inmitten der grünen Bergen der Nordvogesen, liegt unser familiärer Betrieb von beschaulicher
+            Größe, der seinen Besuchern vor allem Ruhe bietet. Umgeben von der Schönheit der weiten Landschaft lässt es
+            sich, zusammen mit seinem vierhufigen Begleiter, hervorragend entspannen. Das Wohlbefinden Ihres Pferdes?
+            Liegt uns sehr am Herzen und hat bei uns oberste Priorität.
+          </p>
+        )}
+        {locale === 'fr' && (
+          <p>
+            Située à Lembach (F-67510) dans le magnifique Parc naturel régional des Vosges du Nord, notre structure à
+            taille humaine se veut avant tout être un havre de paix, où la beauté du paysage suffit à se ressourcer au
+            contact de son compagnon à sabots. Le bien-être de votre cheval ? Nous en faisons notre priorité.
+          </p>
+        )}
         {/* <p>
         Située à Lembach (F-67510) dans le magnifique Parc naturel régional des Vosges du Nord, notre structure à taille
         humaine se veut avant tout être un havre de paix, où la beauté du paysage suffit à se ressourcer au contact de
