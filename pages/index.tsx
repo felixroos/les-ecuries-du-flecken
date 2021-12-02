@@ -13,7 +13,7 @@ import About from '../components/About';
 import Gallery from '../components/Gallery';
 import Anchor from '../components/Anchor';
 import Pension from '../components/Pension';
-import { useLocale } from './api/useLocales';
+import { useLocales } from './api/useLocales';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
@@ -21,6 +21,7 @@ const Centered = ({ children }) => <div className="flex flex-col md:items-center
 const Slim = ({ children }) => <div className="max-w-lg">{children}</div>;
 
 export default function Home() {
+  const [fr, de] = useLocales();
   return (
     <Layout>
       <Head>
@@ -33,7 +34,10 @@ export default function Home() {
       <Content>
         <Spacer />
         <Centered>
-          <Heading>Présentation / Über uns</Heading>
+          <Heading>
+            {de && 'Über uns'}
+            {fr && 'Présentation'}
+          </Heading>
           <About />
         </Centered>
         <Divider />

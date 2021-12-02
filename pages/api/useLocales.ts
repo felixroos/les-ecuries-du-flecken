@@ -10,11 +10,11 @@ const getLocale = (pathname) => {
   return routeLocale || defaultLocale;
 };
 
-export function useLocale() {
+export function useLocales() {
   const router = useRouter();
   const [locale, setLocale] = useState(getLocale(router.pathname));
   useEffect(() => {
     setLocale(getLocale(router.pathname)); // will not rerender if it stays the same
   }, [router.pathname]);
-  return [locale, setLocale];
+  return locales.map((l) => locale === l);
 }

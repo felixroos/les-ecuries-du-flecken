@@ -1,20 +1,20 @@
 import { useRouter } from 'next/dist/client/router';
-import { useLocale } from '../pages/api/useLocales';
+import { useLocales } from '../pages/api/useLocales';
 
 const About = () => {
-  const [locale] = useLocale();
+  const [fr, de] = useLocales();
   return (
     <div className="flex justify-center">
       <div className="max-w-lg">
-        {locale === 'de' && (
+        {de && (
           <p>
-            In Lembach, inmitten der grünen Bergen der Nordvogesen, liegt unser familiärer Betrieb von beschaulicher
+            In Lembach, inmitten der grünen Berge der Nordvogesen, liegt unser familiärer Betrieb von beschaulicher
             Größe, der seinen Besuchern vor allem Ruhe bietet. Umgeben von der Schönheit der weiten Landschaft lässt es
             sich, zusammen mit seinem vierhufigen Begleiter, hervorragend entspannen. Das Wohlbefinden Ihres Pferdes?
             Liegt uns sehr am Herzen und hat bei uns oberste Priorität.
           </p>
         )}
-        {locale === 'fr' && (
+        {fr && (
           <p>
             Située à Lembach (F-67510) dans le magnifique Parc naturel régional des Vosges du Nord, notre structure à
             taille humaine se veut avant tout être un havre de paix, où la beauté du paysage suffit à se ressourcer au
