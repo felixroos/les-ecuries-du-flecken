@@ -3,15 +3,15 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import React, { useState } from 'react';
 import Img from './Img';
-import box from '../public/img/gallery/box.jpg';
 
-import boxenimherbst from '../public/img/gallery/boxenimherbst.png';
+/* import boxenimherbst from '../public/img/gallery/boxenimherbst.png';
+import box from '../public/img/gallery/box.jpg';
 import manegebarres from '../public/img/gallery/manegebarres.jpg';
 import koppel from '../public/img/gallery/koppel.jpg';
 import foinfaitmaison from '../public/img/gallery/foinfaitmaison.jpg';
 import laufstall from '../public/img/gallery/laufstall.jpg';
 import halleundoffenstallaussicht from '../public/img/gallery/halleundoffenstallaussicht.jpg';
-import enjoykutsche from '../public/img/gallery/enjoykutsche.png';
+import enjoykutsche from '../public/img/gallery/enjoykutsche.png'; */
 
 const files = [
   {
@@ -19,7 +19,7 @@ const files = [
     title_de: 'Box',
     description_fr: 'TBD',
     description_de: 'TBD',
-    source: box.src, // not from mail
+    source: './img/gallery/box.jpg', // not from mail
     width: 1600,
     height: 1200,
   },
@@ -28,7 +28,7 @@ const files = [
     title_de: 'Ställe',
     description_fr: 'ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)',
     description_de: 'Offen, gut durchlüftet, aber windgeschützt (staubarm)',
-    source: boxenimherbst.src,
+    source: './img/gallery/boxenimherbst.png',
     width: 2860,
     height: 2299,
   },
@@ -37,7 +37,7 @@ const files = [
     title_de: 'Lichtdurchflutete Halle',
     description_fr: 'avec barres, chandeliers, plots…',
     description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
-    source: manegebarres.src,
+    source: './img/gallery/manegebarres.jpg',
     width: 960,
     height: 720,
   },
@@ -46,7 +46,7 @@ const files = [
     title_de: 'Mehrere Hektar hügeliger Weiden mit Elektrozaun (3 Litzen)',
     description_fr: 'Unendlich weite Wiesen',
     description_de: 'Unendlich weite Wiesen',
-    source: koppel.src,
+    source: './img/gallery/koppel.jpg',
     width: 2016,
     height: 954,
   },
@@ -55,7 +55,7 @@ const files = [
     title_de: 'Heu von hervorragender Qualität',
     description_fr: 'entièrement produit sur la ferme',
     description_de: 'zu 100% aus eigener Produktion',
-    source: foinfaitmaison.src,
+    source: './img/gallery/foinfaitmaison.jpg',
     width: 4160,
     height: 3120,
   },
@@ -64,7 +64,7 @@ const files = [
     title_de: 'Laufstall',
     description_fr: '',
     description_de: '',
-    source: laufstall.src,
+    source: './img/gallery/laufstall.jpg',
     width: 4160,
     height: 3120,
   },
@@ -73,7 +73,7 @@ const files = [
     title_de: 'Offenstall',
     description_fr: '',
     description_de: '',
-    source: halleundoffenstallaussicht.src,
+    source: './img/gallery/halleundoffenstallaussicht.jpg',
     width: 4160,
     height: 3120,
   },
@@ -82,7 +82,7 @@ const files = [
     title_de: '',
     description_fr: '',
     description_de: '',
-    source: enjoykutsche.src,
+    source: './img/gallery/enjoykutsche.png',
     width: 2448,
     height: 1961,
   },
