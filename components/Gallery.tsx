@@ -64,6 +64,27 @@ const files = [
     description_de: 'zu 100% aus eigener Produktion',
     source: './img/gallery/foinfaitmaison.jpg',
   },
+  {
+    title_fr: 'Stabulation aménagée',
+    title_de: 'Laufstall',
+    description_fr: '',
+    description_de: '',
+    source: './img/gallery/laufstall.jpg',
+  },
+  {
+    title_fr: 'Stabulation parcours',
+    title_de: 'Offenstall',
+    description_fr: '',
+    description_de: '',
+    source: './img/gallery/halleundoffenstallaussicht.jpg',
+  },
+  {
+    title_fr: '?',
+    title_de: '',
+    description_fr: '',
+    description_de: '',
+    source: './img/gallery/enjoykutsche.png',
+  },
 ];
 
 export default function Example() {

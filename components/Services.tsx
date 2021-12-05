@@ -67,10 +67,13 @@ export default function Services() {
           bientôt plus ! En attendant : possibilité de bivouac sur la ferme, et organisation de soirées à thème pour les
           grands groupes.
         </p> */}
-        <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <a
+          href="#wanderreiten"
+          className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
           {de && 'Mehr erfahren'}
           {fr && 'En savoir plus'}
-        </button>
+        </a>
       </Service>
       <ServiceImage alt="" src="./img/wanderreiten.png" />
 
@@ -96,10 +99,13 @@ export default function Services() {
             Gefährten an. Unser Ziel? Im Gespräch gemeinsam die beste Lösung zu finden.
           </p>
         )}
-        <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <a
+          href="#pension"
+          className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
           {de && 'Mehr erfahren'}
           {fr && 'En savoir plus'}
-        </button>
+        </a>
       </Service>
       <Service
         heading={
@@ -136,10 +142,13 @@ export default function Services() {
           </>
         )}
         {de && <p>TBD</p>}
-        <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        {/* <a
+          href="#zucht"
+          className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
           {de && 'Mehr erfahren'}
           {fr && 'En savoir plus'}
-        </button>
+        </a> */}
       </Service>
       <ServiceImage alt="" src="./img/cocosaddled.jpg" className="row-start-5 md:row-start-3 md:col-start-2" />
       {/* <ServiceImage alt="" src="./img/enjoy.jpg" className="row-start-5 md:row-start-3 md:col-start-2" /> */}

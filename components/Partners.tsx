@@ -1,15 +1,18 @@
 const partners = [
-  {
-    name: 'Deutsche Wanderreiter Akademie',
-    logo: 'https://image.jimcdn.com/app/cms/image/transf/dimension=192x10000:format=png/path/sf9cc07944986b423/image/i9f4343edd40ae310/version/1597841712/image.png',
-  },
-  {
+  /* {
     name: 'Visit Alsace',
     logo: 'https://www.entela.fr/wp-content/uploads/Logo-alsace.png',
+    url: 'https://www.crtegrandest.fr/',
+  }, */
+  {
+    name: 'CRTE Grand-Est',
+    logo: 'img/partners/logoCRTEgrandest.png',
+    url: 'https://www.crtegrandest.fr/',
   },
   {
-    name: 'Cheval Club de France',
-    logo: 'https://www.ecuriesdumaistre.com/wp-content/uploads/sites/72/2017/12/FFE-Logo-Cheval-Club-de-France.jpg',
+    name: 'Tourisme Equestre Bas-Rhin',
+    logo: 'img/partners/logotourismeequestre.jpg',
+    url: 'https://alsaceacheval.com/',
   },
 ];
 
@@ -17,10 +20,12 @@ export default function Partners() {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-3 gap-4 md:grid-cols-3 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
           {partners.map((partner, i) => (
             <div key={i} className="col-span-1 place-items-center grid max-h-24 overflow-hidden">
-              <img className="max-h-24 max-w-24" src={partner.logo} alt={partner.name} />
+              <a href={partner.url} target="_blank" rel="noopener noreferrer">
+                <img className="max-h-24 max-w-24" src={partner.logo} alt={partner.name} />
+              </a>
             </div>
           ))}
         </div>

@@ -11,35 +11,31 @@ create-next-app).
 - [ ] Über uns
   - [ ] KÜRZEN!
   - [ ] move stuff to timeline?
-  - [ ] soll da ein bild rein?
-  - [ ] Übersetzen
+  - [x] soll da ein bild rein?
+  - [x] Übersetzen
 - [ ] Tourisme équestre / Wanderreiten
   - [ ] KÜRZEN!
-  - [ ] vllt auch unterseite (cta)
-  - [ ] Bild raussuchen
-  - [ ] Übersetzen
-- [ ] Elevage / Zucht
+  - [x] vllt auch unterseite (cta)
+  - [x] Bild raussuchen
+  - [x] Übersetzen
+- [x] Elevage / Zucht
   - [x] Textlänge ok
   - [x] Bild raussuchen
-  - [ ] Übersetzen
+  - [x] Übersetzen
 - [ ] Unser Hof
-  - [ ] Bilder raussuchen
-  - [ ] Umbenennen in Galerie?
-  - [ ] Übersetzen
+  - [x] Bilder raussuchen
+  - [x] Umbenennen in Galerie?
+  - [ ] Labels / Übersetzen
 - [ ] Historie
   - [ ] soll das drinbleiben?
   - [ ] wenn ja, was soll rein? (nicht mehr als 6 punkte)
   - [ ] Übersetzen
-- [ ] anfahrt
-  - [ ] text fehlt (1 satz!)
-  - [ ] Übersetzen
-- [ ] Partner
-  - [ ] soll das drinbleiben?
-  - [ ] wenn ja, was soll rein?
+- [x] anfahrt
+- [x] Partner
 - [ ] Kontaktformular
   - [ ] ist das nötig?
 - [ ] Social Links
-  - [ ] noch was außer facebook
+  - [ ] noch was außer facebook?
 - [ ] Domain
 - [ ] Budget klären
   - [ ] schon ~16h gearbeitet
@@ -63,8 +59,12 @@ create-next-app).
 - [ ] Structure labellisée Centre de Tourisme Equestre
 - [ ] Betrieb ausgezeichnet mit dem Label Centre de Tourisme Equestre
 
-
 ### bilder die zu klein sind
 
 - manegebarres
 - koppel
+
+- https://alsaceacheval.com/uploads/PDF/guide_tourisme_equestre_alsace_2016-2017.pdf aktualisieren?
+- https://alsaceacheval.com/wp-content/uploads/2021/11/Brochure-Alsace-a-cheval-2022-web.pdf <- www.ecuries-du-flecken.com
+- www.ecuries-du-flecken.com <-- kündigen und neu bestellen
+- https://www.reiten-weltweit.de/daten/wanderreiten-elsass-lothringen-vogesen-232.html
