@@ -3,6 +3,10 @@ import { useLocales } from '../pages/api/useLocales';
 import Anchor from './Anchor';
 import ContactButton from './ContactButton';
 import Heading from './Heading';
+import Img from './Img';
+import offenstall from '../public/img/offenstall.png';
+import jaziaschlafend from '../public/img/jaziaschlafend.png';
+import enjoy from '../public//img/enjoy.jpg';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
@@ -17,7 +21,7 @@ export default function Pension() {
       <Centered>
         <Heading>Pension</Heading>
         <div className="prose">
-          <img src="/img/offenstall.png" className="rounded-xl mx-auto mb-4" />
+          <Img src={offenstall.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
           {fr && <p>Pour chevaux et poneys, à partir de 260 € / mois</p>}
           {de && <p>Für Pferde und Ponies, ab 260€/Monat</p>}
           {fr && <p>Différents types d’hébergement (tous équipés d’abreuvoirs anti-gel):</p>}
@@ -106,7 +110,7 @@ export default function Pension() {
         <div className="prose">
           {fr && <h2>Pension retraite et pension poulains/jeunes chevaux</h2>}
           {de && <h2>Pension für Rentnerpferde oder Fohlen / Jungpferde</h2>}
-          <img src="/img/jaziaschlafend.png" className="rounded-xl mx-auto mb-4" />
+          <Img src={jaziaschlafend.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
           {fr && (
             <p>
               Vous souhaitez confier votre compagnon à quatre pattes afin qu’il soit entre de bonnes mains, accompagné
@@ -185,7 +189,7 @@ export default function Pension() {
         <div className="prose">
           {fr && <h2>Pension juments gestantes - poulinage</h2>}
           {de && <h2>Pension für trächtige Stuten -Abfohlüberwachung </h2>}
-          <img src="/img/enjoy.jpg" className="rounded-xl mx-auto mb-4" />
+          <Img src={enjoy.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
           {fr && (
             <p>
               Pour préparer la venue d’un poulain en toute sérénité. Nous nous chargeons de la surveillance et de

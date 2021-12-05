@@ -1,7 +1,17 @@
 import { useLocales } from '../pages/api/useLocales';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
-import { useState } from 'react';
+import React, { useState } from 'react';
+import Img from './Img';
+import box from '../public/img/gallery/box.jpg';
+
+import boxenimherbst from '../public/img/gallery/boxenimherbst.png';
+import manegebarres from '../public/img/gallery/manegebarres.jpg';
+import koppel from '../public/img/gallery/koppel.jpg';
+import foinfaitmaison from '../public/img/gallery/foinfaitmaison.jpg';
+import laufstall from '../public/img/gallery/laufstall.jpg';
+import halleundoffenstallaussicht from '../public/img/gallery/halleundoffenstallaussicht.jpg';
+import enjoykutsche from '../public/img/gallery/enjoykutsche.png';
 
 const files = [
   {
@@ -9,86 +19,74 @@ const files = [
     title_de: 'Box',
     description_fr: 'TBD',
     description_de: 'TBD',
-    source: './img/gallery/box.jpg', // not from mail
+    source: box.src, // not from mail
+    width: 1600,
+    height: 1200,
   },
   {
     title_fr: 'Ecuries',
     title_de: 'Ställe',
     description_fr: 'ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)',
     description_de: 'Offen, gut durchlüftet, aber windgeschützt (staubarm)',
-    source: './img/gallery/boxenimherbst.png',
+    source: boxenimherbst.src,
+    width: 2860,
+    height: 2299,
   },
   {
     title_fr: 'Manège éclairé',
     title_de: 'Lichtdurchflutete Halle',
     description_fr: 'avec barres, chandeliers, plots…',
     description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
-    source: './img/gallery/manegebarres.jpg',
+    source: manegebarres.src,
+    width: 960,
+    height: 720,
   },
   {
     title_fr: 'Plusieurs hectares de pâtures vallonées et clôturées (3 fils électrifiés sur secteur)',
     title_de: 'Mehrere Hektar hügeliger Weiden mit Elektrozaun (3 Litzen)',
     description_fr: 'Unendlich weite Wiesen',
     description_de: 'Unendlich weite Wiesen',
-    source: './img/gallery/koppel.jpg',
+    source: koppel.src,
+    width: 2016,
+    height: 954,
   },
   {
     title_fr: 'Foin de qualité supérieure',
     title_de: 'Heu von hervorragender Qualität',
     description_fr: 'entièrement produit sur la ferme',
     description_de: 'zu 100% aus eigener Produktion',
-    source: './img/gallery/foinfaitmaison.jpg',
+    source: foinfaitmaison.src,
+    width: 4160,
+    height: 3120,
   },
   {
     title_fr: 'Stabulation aménagée',
     title_de: 'Laufstall',
     description_fr: '',
     description_de: '',
-    source: './img/gallery/laufstall.jpg',
+    source: laufstall.src,
+    width: 4160,
+    height: 3120,
   },
   {
     title_fr: 'Stabulation parcours',
     title_de: 'Offenstall',
     description_fr: '',
     description_de: '',
-    source: './img/gallery/halleundoffenstallaussicht.jpg',
+    source: halleundoffenstallaussicht.src,
+    width: 4160,
+    height: 3120,
   },
   {
     title_fr: '?',
     title_de: '',
     description_fr: '',
     description_de: '',
-    source: './img/gallery/enjoykutsche.png',
+    source: enjoykutsche.src,
+    width: 2448,
+    height: 1961,
   },
 ];
-
-/* {
-    title_fr: 'Manège éclairé',
-    title_de: 'Lichtdurchflutete Halle',
-    description_fr: 'avec barres, chandeliers, plots …',
-    description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
-    source: './img/gallery/manegeeclairee.jpg',
-  }, */
-/* {
-    title_fr: 'Manège éclairé',
-    title_de: 'Lichtdurchflutete Halle',
-    description_fr: 'avec barres, chandeliers, plots …',
-    description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
-    source: './img/halle.jpg',
-  }, */
-/* {
-    title_fr: 'Paddocks',
-    title_de: 'Paddocks',
-    description_fr: '',
-    description_de: '',
-    source: './img/gallery/.jpg',
-  } */ /* {
-    title_fr: 'Douche et aire de pansage',
-    title_de: '',
-    description_fr: '',
-    description_de: '',
-    source: './img/gallery/.jpg',
-  }, */
 
 const images = files.map((file) => file.source);
 
@@ -121,7 +119,7 @@ export default function Gallery() {
       )}
       <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
         {files.map((file, index) => (
-          <li key={file.source} className="relative">
+          <li key={index} className="relative">
             <a
               onClick={() => {
                 setPhotoIndex(index);
@@ -129,7 +127,12 @@ export default function Gallery() {
               }}
               className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-primary overflow-hidden"
             >
-              <img src={file.source} alt="" className="object-cover pointer-events-none group-hover:opacity-75" />
+              <Img
+                src={file.source}
+                alt=""
+                className="object-cover pointer-events-none group-hover:opacity-75"
+                layout="responsive"
+              />
               <button type="button" className="absolute inset-0 focus:outline-none">
                 <span className="sr-only">
                   {fr && file.title_fr}

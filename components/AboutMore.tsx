@@ -2,11 +2,14 @@ import React from 'react';
 import { useLocales } from '../pages/api/useLocales';
 import Anchor from './Anchor';
 import Heading from './Heading';
+import Img from './Img';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
 const Centered = ({ children }) => <div className="flex flex-col md:items-center">{children}</div>;
 const Slim = ({ children }) => <div className="max-w-lg">{children}</div>;
+
+import image from '../public/img/helenesylvainuberuns_cropped2.png';
 
 export default function AboutMore() {
   const [fr, de] = useLocales();
@@ -19,7 +22,7 @@ export default function AboutMore() {
           {fr && 'Présentation'}
         </Heading>
         <div className="prose">
-          <img src="/img/helenesylvainuberuns_cropped2.png" className="rounded-xl mx-auto mb-4" />
+          <Img src={image.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
           {fr && (
             <>
               <p>

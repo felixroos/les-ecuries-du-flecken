@@ -1,8 +1,11 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
 import Heading from './Heading';
 import Anchor from './Anchor';
 import { useLocales } from '../pages/api/useLocales';
+import Img from './Img';
+import wanderreiten from '../public/img/wanderreiten.png';
+import box from '../public/img/gallery/box.jpg';
+import cocosaddled from '../public/img/cocosaddled.jpg';
 
 const Service = ({ heading, children, className, id }: any) => (
   <>
@@ -16,7 +19,7 @@ const Service = ({ heading, children, className, id }: any) => (
 
 const ServiceImage = ({ src, alt, className }: any) => {
   /* <Parallax className="overflow-hidden" y={[-16, 16]} tagOuter="figure"> */
-  return <img src={src} alt={alt} className={`${className || ''}`} />;
+  return <Img src={src} alt={alt} className={`${className || ''}`} />;
   /* </Parallax> */
 };
 
@@ -75,9 +78,9 @@ export default function Services() {
           {fr && 'En savoir plus'}
         </a>
       </Service>
-      <ServiceImage alt="" src="./img/wanderreiten.png" />
+      <ServiceImage alt="" src={wanderreiten.src} />
 
-      <ServiceImage alt="" src="./img/gallery/box.jpg" />
+      <ServiceImage alt="" src={box.src} />
       <Service
         heading={
           <>
@@ -150,9 +153,7 @@ export default function Services() {
           {fr && 'En savoir plus'}
         </a> */}
       </Service>
-      <ServiceImage alt="" src="./img/cocosaddled.jpg" className="row-start-5 md:row-start-3 md:col-start-2" />
-      {/* <ServiceImage alt="" src="./img/enjoy.jpg" className="row-start-5 md:row-start-3 md:col-start-2" /> */}
-      {/*   */}
+      <ServiceImage alt="" src={cocosaddled.src} className="row-start-5 md:row-start-3 md:col-start-2" />
     </div>
   );
 }

@@ -3,6 +3,8 @@ import { useLocales } from '../pages/api/useLocales';
 import Anchor from './Anchor';
 import ContactButton from './ContactButton';
 import Heading from './Heading';
+import Img from './Img';
+import wanderreiten2 from '../public/img/wanderreiten2.png';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;
@@ -20,7 +22,7 @@ export default function TrailRiding() {
           {fr && 'Tourisme Equestre'}
         </Heading>
         <div className="prose">
-          <img src="/img/wanderreiten2.png" className="rounded-xl mx-auto mb-4" />
+          <Img src={wanderreiten2.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
           {fr && (
             <p>
               Etape-clé du circuit{' '}

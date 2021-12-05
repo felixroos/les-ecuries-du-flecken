@@ -1,3 +1,9 @@
+import React from 'react';
+import Img from './Img';
+
+import logoCRTEgrandest from '../public/img/partners/logoCRTEgrandest.png';
+import logotourismeequestre from '../public/img/partners/logotourismeequestre.jpg';
+
 const partners = [
   /* {
     name: 'Visit Alsace',
@@ -6,12 +12,12 @@ const partners = [
   }, */
   {
     name: 'CRTE Grand-Est',
-    logo: 'img/partners/logoCRTEgrandest.png',
+    logo: logoCRTEgrandest.src,
     url: 'https://www.crtegrandest.fr/',
   },
   {
     name: 'Tourisme Equestre Bas-Rhin',
-    logo: 'img/partners/logotourismeequestre.jpg',
+    logo: logotourismeequestre.src,
     url: 'https://alsaceacheval.com/',
   },
 ];
@@ -24,7 +30,7 @@ export default function Partners() {
           {partners.map((partner, i) => (
             <div key={i} className="col-span-1 place-items-center grid max-h-24 overflow-hidden">
               <a href={partner.url} target="_blank" rel="noopener noreferrer">
-                <img className="max-h-24 max-w-24" src={partner.logo} alt={partner.name} />
+                <Img className="max-h-24 max-w-24" src={partner.logo} alt={partner.name} layout="responsive" />
               </a>
             </div>
           ))}

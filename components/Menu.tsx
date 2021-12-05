@@ -2,9 +2,11 @@
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import React, { Fragment } from 'react';
+import { isContext } from 'vm';
 import { useLocales } from '../pages/api/useLocales';
 import { LanguageSwitcher } from './Flags';
-const icon = 'https://www.freeiconspng.com/thumbs/horse-icons/horse-icon-27.png';
+import Img from './Img';
+import icon from '../public/img/horse-icon-27.png';
 
 //  className="flex items-center"
 
@@ -22,7 +24,7 @@ export default function Menu() {
     ...(!fr
       ? []
       : [
-        { label: 'Nos Installations', id: 'hof' },
+          { label: 'Nos Installations', id: 'hof' },
           { label: 'Tourisme Equestre', id: 'wanderreiten' },
           { label: 'Pension', id: 'pension' },
           { label: 'Contact', id: 'footer' },
@@ -37,7 +39,7 @@ export default function Menu() {
               <div className="flex justify-start lg:w-0 lg:flex-1 items-center">
                 <a href="#" className="flex items-center">
                   <span className="sr-only">Les Ecuries du Flecken</span>
-                  <img className="h-8 w-auto sm:h-10" src={icon} alt="" />
+                  <Img className="h-8 w-auto sm:h-10" src={icon.src} alt="" width={8} height={8} />
                   <h1 className="ml-2">Les Ecuries du Flecken</h1>
                 </a>
               </div>
@@ -49,7 +51,11 @@ export default function Menu() {
               </div>
               <Popover.Group as="nav" className="hidden md:flex space-x-10 items-center">
                 {navigation.map(({ label, id }, i) => (
-                  <a key={i} href={`#${id}`} className="text-base font-medium hover:text-primary hover:underline text-gray-900">
+                  <a
+                    key={i}
+                    href={`#${id}`}
+                    className="text-base font-medium hover:text-primary hover:underline text-gray-900"
+                  >
                     {label}
                   </a>
                 ))}
@@ -76,7 +82,7 @@ export default function Menu() {
                   <div className="pt-5 pb-6 px-5">
                     <div className="flex items-center justify-between">
                       <div>
-                        <img className="h-8 w-auto" src={icon} alt="Les Ecuries du Flecken" />
+                        <Img className="h-8 w-auto" src={icon.src} alt="Les Ecuries du Flecken" />
                       </div>
                       <div className="-mr-2">
                         <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">

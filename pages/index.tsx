@@ -86,7 +86,7 @@ export default function Home() {
         <TrailRiding />
         <Divider />
         <Spacer />
-        
+
         <Pension />
         <Divider />
         <Spacer />
@@ -116,7 +116,7 @@ export default function Home() {
         </Centered>
         <Partners />
         <Divider />
-        <ParallaxImage src="./img/mampfen.jpg" />
+        <ParallaxImage src="/img/mampfen.jpg" />
       </Content>
     </Layout>
   );
