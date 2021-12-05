@@ -22,9 +22,9 @@ export default function Menu() {
     ...(!fr
       ? []
       : [
+        { label: 'Nos Installations', id: 'hof' },
           { label: 'Tourisme Equestre', id: 'wanderreiten' },
           { label: 'Pension', id: 'pension' },
-          { label: 'Nos Installations', id: 'hof' },
           { label: 'Contact', id: 'footer' },
         ]),
   ];

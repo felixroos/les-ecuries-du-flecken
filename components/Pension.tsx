@@ -16,9 +16,10 @@ export default function Pension() {
       <Centered>
         <Heading>Pension</Heading>
         <div className="prose">
+          <img src="/img/offenstall.png" className="rounded-xl mx-auto mb-4" />
           {fr && <p>Pour chevaux et poneys, à partir de 260 € / mois</p>}
           {de && <p>Für Pferde und Ponies, ab 260€/Monat</p>}
-          {fr && <p>Différents types d’hébergement (tous équipés d’abreuvoirs anti-gel) :</p>}
+          {fr && <p>Différents types d’hébergement (tous équipés d’abreuvoirs anti-gel):</p>}
           {de && <p>Verschiedene Unterbringungsmöglichkeiten (alle ausgestattet mit frostsicheren Tränken)</p>}
           <ul>
             {fr && <li>En box (au minimum 3,5m x 4m – pouvant aller jusqu’à 5m x 5m)</li>}
@@ -101,6 +102,7 @@ export default function Pension() {
           )}
           {fr && <h2>Pension retraite et pension poulains/jeunes chevaux</h2>}
           {de && <h2>Pension für Rentnerpferde oder Fohlen / Jungpferde</h2>}
+          <img src="/img/jaziaschlafend.png" className="rounded-xl mx-auto mb-4" />
           {fr && (
             <p>
               Vous souhaitez confier votre compagnon à quatre pattes afin qu’il soit entre de bonnes mains, accompagné
@@ -176,6 +178,7 @@ export default function Pension() {
           </ul>
           {fr && <h2>Pension juments gestantes - poulinage</h2>}
           {de && <h2>Pension für trächtige Stuten -Abfohlüberwachung </h2>}
+          <img src="/img/enjoy.jpg" className="rounded-xl mx-auto mb-4" />
           {fr && (
             <p>
               Pour préparer la venue d’un poulain en toute sérénité. Nous nous chargeons de la surveillance et de

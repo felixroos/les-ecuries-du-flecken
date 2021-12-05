@@ -19,6 +19,7 @@ export default function TrailRiding() {
           {fr && 'Tourisme Equestre'}
         </Heading>
         <div className="prose">
+          <img src="/img/wanderreiten2.png" className="rounded-xl mx-auto mb-4" />
           {fr && (
             <p>
               Etape-clé du circuit{' '}

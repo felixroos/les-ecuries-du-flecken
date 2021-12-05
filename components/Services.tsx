@@ -32,7 +32,7 @@ export default function Services() {
           </>
         }
         className="row-start-2 md:row-start-1"
-        id="wanderreiten"
+        id="wanderreiten-teaser"
       >
         {fr && (
           <p>
@@ -68,12 +68,13 @@ export default function Services() {
           grands groupes.
         </p> */}
         <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          Jetzt anfragen
+          {de && 'Mehr erfahren'}
+          {fr && 'En savoir plus'}
         </button>
       </Service>
       <ServiceImage alt="" src="./img/wanderreiten.png" />
 
-      <ServiceImage alt="" src="./img/box.jpg" />
+      <ServiceImage alt="" src="./img/gallery/box.jpg" />
       <Service
         heading={
           <>
@@ -96,7 +97,8 @@ export default function Services() {
           </p>
         )}
         <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          Jetzt anfragen
+          {de && 'Mehr erfahren'}
+          {fr && 'En savoir plus'}
         </button>
       </Service>
       <Service
@@ -106,7 +108,7 @@ export default function Services() {
             {de && 'Zucht'}
           </>
         }
-        id="zucht"
+        id="zucht-teaser"
       >
         {fr && (
           <>
@@ -135,10 +137,12 @@ export default function Services() {
         )}
         {de && <p>TBD</p>}
         <button className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-          Jetzt anfragen
+          {de && 'Mehr erfahren'}
+          {fr && 'En savoir plus'}
         </button>
       </Service>
-      <ServiceImage alt="" src="./img/enjoy.jpg" className="row-start-5 md:row-start-3 md:col-start-2" />
+      <ServiceImage alt="" src="./img/cocosaddled.jpg" className="row-start-5 md:row-start-3 md:col-start-2" />
+      {/* <ServiceImage alt="" src="./img/enjoy.jpg" className="row-start-5 md:row-start-3 md:col-start-2" /> */}
       {/*   */}
     </div>
   );

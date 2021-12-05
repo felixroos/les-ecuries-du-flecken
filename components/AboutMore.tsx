@@ -19,6 +19,7 @@ export default function AboutMore() {
           {fr && 'Présentation'}
         </Heading>
         <div className="prose">
+          <img src="/img/helenesylvainuberuns_cropped2.png" className="rounded-xl mx-auto mb-4" />
           {fr && (
             <>
               <p>

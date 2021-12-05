@@ -83,12 +83,14 @@ export default function Home() {
         <Divider />
         <Spacer />
 
-        <Pension />
-        <Divider />
-        <Spacer />
         <TrailRiding />
         <Divider />
         <Spacer />
+        
+        <Pension />
+        <Divider />
+        <Spacer />
+
         <AboutMore />
         <Divider />
         <Spacer />
