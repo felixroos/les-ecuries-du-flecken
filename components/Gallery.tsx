@@ -1,4 +1,7 @@
 import { useLocales } from '../pages/api/useLocales';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import { useState } from 'react';
 
 const files = [
   {
@@ -15,41 +18,13 @@ const files = [
     description_de: 'Offen, gut durchlüftet, aber windgeschützt (staubarm)',
     source: './img/gallery/boxenimherbst.png',
   },
-  /* {
-    title_fr: 'Manège éclairé',
-    title_de: 'Lichtdurchflutete Halle',
-    description_fr: 'avec barres, chandeliers, plots …',
-    description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
-    source: './img/gallery/manegeeclairee.jpg',
-  }, */
-  /* {
-    title_fr: 'Manège éclairé',
-    title_de: 'Lichtdurchflutete Halle',
-    description_fr: 'avec barres, chandeliers, plots …',
-    description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
-    source: './img/halle.jpg',
-  }, */
   {
     title_fr: 'Manège éclairé',
     title_de: 'Lichtdurchflutete Halle',
-    description_fr: 'avec barres, chandeliers, plots …',
+    description_fr: 'avec barres, chandeliers, plots…',
     description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
     source: './img/gallery/manegebarres.jpg',
   },
-  ,
-  /* {
-    title_fr: 'Paddocks',
-    title_de: 'Paddocks',
-    description_fr: '',
-    description_de: '',
-    source: './img/gallery/.jpg',
-  } */ /* {
-    title_fr: 'Douche et aire de pansage',
-    title_de: '',
-    description_fr: '',
-    description_de: '',
-    source: './img/gallery/.jpg',
-  }, */
   {
     title_fr: 'Plusieurs hectares de pâtures vallonées et clôturées (3 fils électrifiés sur secteur)',
     title_de: 'Mehrere Hektar hügeliger Weiden mit Elektrozaun (3 Litzen)',
@@ -87,31 +62,92 @@ const files = [
   },
 ];
 
-export default function Example() {
+/* {
+    title_fr: 'Manège éclairé',
+    title_de: 'Lichtdurchflutete Halle',
+    description_fr: 'avec barres, chandeliers, plots …',
+    description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
+    source: './img/gallery/manegeeclairee.jpg',
+  }, */
+/* {
+    title_fr: 'Manège éclairé',
+    title_de: 'Lichtdurchflutete Halle',
+    description_fr: 'avec barres, chandeliers, plots …',
+    description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
+    source: './img/halle.jpg',
+  }, */
+/* {
+    title_fr: 'Paddocks',
+    title_de: 'Paddocks',
+    description_fr: '',
+    description_de: '',
+    source: './img/gallery/.jpg',
+  } */ /* {
+    title_fr: 'Douche et aire de pansage',
+    title_de: '',
+    description_fr: '',
+    description_de: '',
+    source: './img/gallery/.jpg',
+  }, */
+
+const images = files.map((file) => file.source);
+
+export default function Gallery() {
   const [fr, de] = useLocales();
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [open, setOpen] = useState(false);
+  const next = photoIndex < images.length ? images[(photoIndex + 1) % images.length] : undefined;
   return (
-    <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-      {files.map((file) => (
-        <li key={file.source} className="relative">
-          <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-primary overflow-hidden">
-            <img src={file.source} alt="" className="object-cover pointer-events-none group-hover:opacity-75" />
-            <button type="button" className="absolute inset-0 focus:outline-none">
-              <span className="sr-only">
-                {fr && file.title_fr}
-                {de && file.title_de}
-              </span>
-            </button>
-          </div>
-          <p className="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">
-            {fr && file.title_fr}
-            {de && file.title_de}
-          </p>
-          <p className="block text-sm font-medium text-gray-500 pointer-events-none">
-            {fr && file.description_fr}
-            {de && file.description_de}
-          </p>
-        </li>
-      ))}
-    </ul>
+    <>
+      {open && (
+        <Lightbox
+          enableZoom={true}
+          mainSrc={images[photoIndex]}
+          nextSrc={photoIndex < images.length - 1 ? images[(photoIndex + 1) % images.length] : undefined}
+          prevSrc={photoIndex === 0 ? undefined : images[(photoIndex + images.length - 1) % images.length]}
+          onCloseRequest={() => setOpen(false)}
+          onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
+          imageCaption={
+            <>
+              {fr && files[photoIndex].title_fr}
+              {de && files[photoIndex].title_de}
+              <br />
+              {fr && files[photoIndex].description_fr}
+              {de && files[photoIndex].description_de}
+            </>
+          }
+        />
+      )}
+      <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+        {files.map((file, index) => (
+          <li key={file.source} className="relative">
+            <a
+              onClick={() => {
+                setPhotoIndex(index);
+                setOpen(true);
+              }}
+              className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-primary overflow-hidden"
+            >
+              <img src={file.source} alt="" className="object-cover pointer-events-none group-hover:opacity-75" />
+              <button type="button" className="absolute inset-0 focus:outline-none">
+                <span className="sr-only">
+                  {fr && file.title_fr}
+                  {de && file.title_de}
+                </span>
+              </button>
+            </a>
+            <p className="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">
+              {fr && file.title_fr}
+              {de && file.title_de}
+            </p>
+            <p className="block text-sm font-medium text-gray-500 pointer-events-none">
+              {fr && file.description_fr}
+              {de && file.description_de}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
