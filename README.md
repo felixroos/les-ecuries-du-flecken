@@ -44,18 +44,19 @@ create-next-app).
 
 - [x] Manège éclairé avec barres, chandeliers, plots, …
 - [x] Lichtdurchflutete Halle mit Stangen, Hütchen und anderem Bodenarbeitszubehör
-- [ ] Paddocks TODO:
-- [ ] Douche et aire de pansage TODO:
-- [ ] Pferdedusche und Putzplatz
+- [ ] Paddocks?
+- [ ] Douche et aire de pansage?
 - [x] Plusieurs hectares de pâtures vallonées et clôturées (3 fils électrifiés sur secteur)
 - [x] Mehrere Hektar hügeliger Weiden mit Elektrozaun (3 Litzen)
 - [x] Foin de qualité supérieure entièrement produit sur la ferme
 - [x] Heu von hervorragender Qualität, zu 100% aus eigener Produktion
-- [ ] Structure sous vidéosurveillance et présence 24h/24
-- [ ] Videoüberwachte Einrichtung 24h/7
 - [x] Ecuries ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)
 - [x] Offene, gut durchlüftete, aber windgeschützte Stallungen (staubarm)
 
+## mehr?
+
+- [ ] Structure sous vidéosurveillance et présence 24h/24
+- [ ] Videoüberwachte Einrichtung 24h/7
 - [ ] Structure labellisée Centre de Tourisme Equestre
 - [ ] Betrieb ausgezeichnet mit dem Label Centre de Tourisme Equestre
 
@@ -66,5 +67,6 @@ create-next-app).
 
 - https://alsaceacheval.com/uploads/PDF/guide_tourisme_equestre_alsace_2016-2017.pdf aktualisieren?
 - https://alsaceacheval.com/wp-content/uploads/2021/11/Brochure-Alsace-a-cheval-2022-web.pdf <- www.ecuries-du-flecken.com
+  - https://alsaceacheval.com/gite-equestre/les-ecuries-du-flecken/
 - www.ecuries-du-flecken.com <-- kündigen und neu bestellen
 - https://www.reiten-weltweit.de/daten/wanderreiten-elsass-lothringen-vogesen-232.html
