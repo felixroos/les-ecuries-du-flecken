@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocales } from '../pages/api/useLocales';
 import Anchor from './Anchor';
+import ContactButton from './ContactButton';
 import Heading from './Heading';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
@@ -100,6 +101,9 @@ export default function Pension() {
               Winterquartier um. Je nach Wetter dürfen die Pferde zusammen auf den Paddock oder in die Halle.
             </p>
           )}
+        </div>
+        <ContactButton />
+        <div className="prose">
           {fr && <h2>Pension retraite et pension poulains/jeunes chevaux</h2>}
           {de && <h2>Pension für Rentnerpferde oder Fohlen / Jungpferde</h2>}
           <img src="/img/jaziaschlafend.png" className="rounded-xl mx-auto mb-4" />
@@ -176,6 +180,9 @@ export default function Pension() {
               </li>
             )}
           </ul>
+        </div>
+        <ContactButton />
+        <div className="prose">
           {fr && <h2>Pension juments gestantes - poulinage</h2>}
           {de && <h2>Pension für trächtige Stuten -Abfohlüberwachung </h2>}
           <img src="/img/enjoy.jpg" className="rounded-xl mx-auto mb-4" />
@@ -192,9 +199,8 @@ export default function Pension() {
               gewährleisten so die nötige Pflege. Und das bis zum Abfohlen und späteren Absetzen des Fohlens.
             </p>
           )}
-          {fr && <p>Tarifs et renseignements au 06 99 93 64 34</p>}
-          {de && <p>Preise und Infos unter +33 69993634</p>}
         </div>
+        <ContactButton />
       </Centered>
     </>
   );

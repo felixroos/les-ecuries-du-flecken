@@ -25,7 +25,7 @@ export default function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   <li className="flex">
                     <MailIcon className="h-6 text-white mr-2" />{' '}
-                    <a href="#" className="text-base text-gray-300 hover:text-white">
+                    <a href="mailto:lesecuriesduflecken@gmail.com" className="text-base text-gray-300 hover:text-white">
                       lesecuriesduflecken@gmail.com
                     </a>
                   </li>

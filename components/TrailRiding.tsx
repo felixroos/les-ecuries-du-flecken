@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocales } from '../pages/api/useLocales';
 import Anchor from './Anchor';
+import ContactButton from './ContactButton';
 import Heading from './Heading';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
@@ -91,6 +92,7 @@ export default function TrailRiding() {
             </p>
           )}
         </div>
+        <ContactButton />
       </Centered>
     </>
   );

@@ -24,7 +24,7 @@ export default function Contact() {
                   name="username"
                   id="username"
                   autoComplete="username"
-                  className="flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-md sm:text-sm border-gray-300"
+                  className="flex-1 focus:ring-secondary focus:border-secondary block w-full min-w-0 rounded-md sm:text-sm border-gray-300"
                 />
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function Contact() {
                   id="about"
                   name="about"
                   rows={3}
-                  className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+                  className="shadow-sm focus:ring-secondary focus:border-secondary block w-full sm:text-sm border border-gray-300 rounded-md"
                   defaultValue={''}
                 />
               </div>
@@ -51,7 +51,7 @@ export default function Contact() {
       <div className="flex justify-end">
         <button
           type="submit"
-          className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
         >
           {de && 'Absenden'}
           {fr && 'Envoyer'}
