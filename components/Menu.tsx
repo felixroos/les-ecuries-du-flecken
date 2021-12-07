@@ -95,16 +95,22 @@ export default function Menu() {
                   <div className="py-6 px-5 space-y-6">
                     <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                       {navigation.map(({ label, id }, i) => (
-                        <a
-                          key={i}
-                          href={`#${id}`}
-                          onClick={() => {
-                            close();
-                          }}
-                          className="text-base font-medium text-gray-900 hover:text-gray-700"
-                        >
-                          {label}
-                        </a>
+                        <Fragment key={i}>
+                          <a
+                            href={`#${id}`}
+                            onClick={() => {
+                              close();
+                            }}
+                            className="text-base font-medium text-gray-900 hover:text-gray-700 col-start-1"
+                          >
+                            {label}
+                          </a>
+                          {!i && (
+                            <div className="col-start-2 place-self-end">
+                              <LanguageSwitcher />
+                            </div>
+                          )}
+                        </Fragment>
                       ))}
                     </div>
                   </div>

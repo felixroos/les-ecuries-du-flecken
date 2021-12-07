@@ -46,7 +46,7 @@ export default function Services() {
         )}
         {de && (
           <p>
-            Gelegen im Herzen des UNESCO- Biosphärenreservats Pfälzerwald-Nordvogesen ist unser mit dem „Centre de
+            Gelegen im Herzen des UNESCO-Biosphärenreservats Pfälzerwald-Nordvogesen ist unser mit dem „Centre de
             Tourisme Equestre“-Label ausgezeichneter Hof Ausgangspunkt für viele Wandertouren. Fragen Sie uns bei der
             Planung Ihres Wanderritts gerne um Rat!
           </p>
@@ -91,15 +91,14 @@ export default function Services() {
       >
         {fr && (
           <p>
-            Pension pour chevaux et poneys, jeunes chevaux, poulains, poulinières, retraités.... Nous nous adaptons aux
-            besoins de votre compagnon. L&apos;idéal? C&apos;est d&apos;en discuter ensemble pour trouver la meilleure
-            solution!
+            Pour chevaux et poneys, jeunes chevaux, poulains, poulinières, retraités.... Nous nous adaptons aux besoins
+            de votre compagnon. L&apos;idéal? C&apos;est d&apos;en discuter ensemble pour trouver la meilleure solution!
           </p>
         )}
         {de && (
           <p>
-            Pension für Pferde, Ponies, Jungpferde, Fohlen, Zuchtstuten, Rentner… Wir passen uns den Bedürfnissen Ihres
-            Gefährten an. Unser Ziel? Im Gespräch gemeinsam die beste Lösung zu finden.
+            Für Pferde, Ponies, Jungpferde, Fohlen, Zuchtstuten, Rentner… Wir passen uns den Bedürfnissen Ihres
+            Gefährten an. Unser Ziel? Im Gespräch gemeinsam die beste Lösung zu finden!
           </p>
         )}
         <a
@@ -130,28 +129,20 @@ export default function Services() {
               à l’entretien des prés. Ce système d’éco-pâturage contribue au maintien d’une merveilleuse biodiversité
               sur notre domaine.
             </p>
-            {/* <p>
-              Notre passion, nous la vivons également au travers de l’élevage. Attendu pour le printemps 2022, nous
-              avons hâte de découvrir notre premier poulain de race Quarter Horse. Nous en profitons ici pour remercier
-              toutes les personnes ayant contribué à la recherche et à la sélection de notre première jument Quarter
-              Horse....et des prochaines !
-            </p>
-            <p>
-              Vous aurez aussi l’occasion de voir nos vaches de race Vosgienne au détour d’une pâture. Un petit cheptel
-              nous permettant d’entretenir nos belles pâtures (elles mangent les zones de refus laissées par les
-              chevaux). Ce système d’éco-pâturage contribue au maintien d’une merveilleuse biodiversité sur notre
-              domaine.
-            </p> */}
           </>
         )}
-        {de && <p>TBD</p>}
-        {/* <a
-          href="#zucht"
-          className="mt-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-        >
-          {de && 'Mehr erfahren'}
-          {fr && 'En savoir plus'}
-        </a> */}
+        {de && (
+          <>
+            <p>
+              Unsere Leidenschaft leben wir auch in der Zucht. Im Frühling 2022 erwarten wir unser erstes Quarter Horse
+              Fohlen.
+            </p>
+            <p>
+              Auf einem Umweg über die Weide können Sie außerdem unsere Vogeser Kühe bewundern. Unsere Wiederkäuer helfen uns beim
+              Instandhalten der Wiese und tragen so zu einer höheren Biodiversität bei.
+            </p>
+          </>
+        )}
       </Service>
       <ServiceImage alt="" src={cocosaddled.src} className="row-start-5 md:row-start-3 md:col-start-2" />
     </div>

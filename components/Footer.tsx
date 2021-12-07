@@ -42,38 +42,38 @@ export default function Footer() {
                       <br /> 67510 Lembach
                     </a>
                   </li>
+                  <li className="flex">
+                    <FacebookIcon className="h-6 w-6 text-white mr-2" aria-hidden="true" />
+                    <a href="#" className="text-base text-gray-300 hover:text-white">
+                      facebook
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                {/* <ul role="list" className="mt-4 space-y-4">
+                  <li className="flex">
+                    <a href="#" className="text-base text-gray-300 hover:text-white">
+                      Impressum
+                    </a>
+                  </li>
+                </ul> */}
+                {/* <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   {fr && 'Écrire un message'}
                   {de && 'Nachricht schreiben'}
                 </h3>
-                <Contact />
+                <Contact /> */}
               </div>
-              {/*    <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Navigation</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.map((label, i) => (
-                    <li key={i}>
-                      <a href="#" className="text-base text-gray-300 hover:text-white">
-                        {label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            */}{' '}
             </div>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
+          {/* <div className="flex space-x-6 md:order-2">
             <a href="#" className="text-gray-400 hover:text-gray-300">
               <span className="sr-only">item</span>
               <FacebookIcon className="h-6 w-6" aria-hidden="true" />
             </a>
-          </div>
+          </div> */}
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
             &copy; {new Date().getFullYear()} Les Ecuries du Flecken
           </p>

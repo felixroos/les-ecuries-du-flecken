@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import { HomeIcon } from '@heroicons/react/outline';
 import { ColorSwatchIcon, RefreshIcon } from '@heroicons/react/solid';
 import { SparklesIcon } from '@heroicons/react/solid';
 import { CheckIcon, ThumbUpIcon, UserIcon } from '@heroicons/react/solid';
@@ -9,30 +10,29 @@ const timeline = [
     content: 'Übernahme des Hofes',
     target: 'Wir sind voller Ideen Tatendrang',
     href: '#',
-    date: 'November 2020',
-    datetime: '2020-09-20',
+    date: '2019',
     icon: SparklesIcon,
     iconBackground: 'bg-yellow-400',
   },
   {
     id: 2,
-    content: 'Neugestaltung der Boxen',
-    target: 'Jetzt ist alles viel sauberer und besser',
-    href: '#',
-    date: 'Dezember 20020',
-    datetime: '2020-09-22',
-    icon: RefreshIcon,
-    iconBackground: 'bg-blue-500',
-  },
-  {
-    id: 3,
-    content: '27 neue Ferienwohnungen gebaut',
+    content: 'Erneuering der Stallungen',
     target: '',
     href: '#',
-    date: 'Januar 2020',
-    datetime: '2020-09-28',
-    icon: CheckIcon,
-    iconBackground: 'bg-green-500',
+    date: '2019',
+    datetime: '2020-09-22',
+    icon: RefreshIcon,
+    iconBackground: 'bg-primary',
+  },
+  {
+    id: 2,
+    content: 'Erneuerung der Hallenbodens',
+    target: '',
+    href: '#',
+    date: '2020',
+    datetime: '2020-09-22',
+    icon: HomeIcon,
+    iconBackground: 'bg-primary',
   },
 ];
 
@@ -63,11 +63,10 @@ export default function History() {
                 </div>
                 <div className="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
                   <div>
-                    <p className="text-sm text-gray-500 text-left">
-                      {event.content}{' '}
-                      <a href={event.href} className="font-medium text-gray-900">
-                        {event.target}
-                      </a>
+                    <p className="text-sm text-gray-900 text-left">
+                      {event.content}
+                      <br />
+                      <span className="font-medium text-gray-500">{event.target}</span>
                     </p>
                   </div>
                   <div className="text-right text-sm whitespace-nowrap text-gray-500">

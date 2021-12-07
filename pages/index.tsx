@@ -74,14 +74,14 @@ export default function Home() {
         <Gallery />
         <Divider />
         <Spacer />
-        <Centered>
+        {/* <Centered>
           <Heading>Historie</Heading>
           <Slim>
             <History />
           </Slim>
         </Centered>
         <Divider />
-        <Spacer />
+        <Spacer /> */}
 
         <TrailRiding />
         <Divider />

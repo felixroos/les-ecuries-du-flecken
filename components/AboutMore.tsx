@@ -39,7 +39,7 @@ export default function AboutMore() {
           {de && (
             <p>
               Im Dezember 2019 haben Hélène und Sylvain die Ecuries du Flecken übernommen. Seitdem wurden bereits einige
-              Verbesserungen vorgenommen und und viele neue Projekte stehen noch an. Das bis dahin bestehende System der
+              Verbesserungen vorgenommen und viele neue Projekte stehen noch an. Das bis dahin bestehende System der
               permanenten Einstreu wurde eingstellt, die Stallungen neu durchdacht und ein neuer Offenstall kam dazu.
               Vor Kurzem wurde der Hallenboden gänzlich erneuert.
             </p>
@@ -63,12 +63,12 @@ export default function AboutMore() {
           )}
           {de && (
             <p>
-              Leidenschaftliche Reiter sind wir seit unserer Kindheit und viele Jahre halten wir nun auch selbst Pferde.
+              Wir sind seit unserer Kindheit leidenschaftliche Reiter und halten seit vielen Jahren auch selbst Pferde.
               Seither bilden wir uns stetig weiter: Hélène hat die Berufslizenz zur Pferdewirtin („Management et Gestion
-              des entreprises de la filière équine“) und den Galop 7, Sylvain den Galop 5 im Fahren und absolviert zur
-              Zeit seine Ausbildung zum Wanderrittführer. Verfeinert haben wir unser Savoir-faire während diverser
-              Praktika im professionellen Bereich, wie im Zuchtbetrieb des Haras de Hus und beim Horsemanship-Lehrgang
-              bei Andy Booth.
+              des entreprises de la filière équine“) und den Galop 7. Sylvain hat den Galop 5 im Fahren und absolviert
+              zur Zeit seine Ausbildung zum Wanderrittführer. Während diverser Praktika im professionellen Bereich haben
+              wir unser Savoir-faire verfeinert, wie z.B. im Zuchtbetrieb des Haras de Hus und beim Horsemanship-Lehrgang bei
+              Andy Booth.
             </p>
           )}
           {fr && (
@@ -80,7 +80,7 @@ export default function AboutMore() {
           {de && (
             <>
               <p>
-                In unserer Jugend haben wir unser Können auf Springturnieren, Vielseitigkeits- und Orientierungsritten
+                In unserer Jugend haben wir unser Können auf Spring- und Vielseitigkeitsturnieren sowie Orientierungsritten
                 gemessen, im Herzen sind wir aber Wanderreiter.
               </p>
               <p>

@@ -10,8 +10,8 @@ const About = () => {
           <p>
             In Lembach, inmitten der grünen Berge der Nordvogesen, liegt unser familiärer Betrieb von beschaulicher
             Größe, der seinen Besuchern vor allem Ruhe bietet. Umgeben von der Schönheit der weiten Landschaft lässt es
-            sich, zusammen mit seinem vierhufigen Begleiter, hervorragend entspannen. Das Wohlbefinden Ihres Pferdes
-            liegt uns sehr am Herzen und hat oberste Priorität.
+            sich mit seinem vierhufigen Begleiter hervorragend entspannen. Das Wohlbefinden Ihres Pferdes liegt uns sehr
+            am Herzen und hat oberste Priorität.
           </p>
         )}
         {fr && (
