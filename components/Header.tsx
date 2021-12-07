@@ -20,7 +20,7 @@ export default function Header({ small }: any) {
       <h1 className="text-black text-4xl md:text-5xl text-primary">Les Ecuries du Flecken</h1>
       <h2 className="text-2xl md:text-3xl text-primary">
         {de && 'Wanderreiten im Elsass'}
-        {fr && 'Randonner á cheval en Alsace'}
+        {fr && 'Randonner à cheval en Alsace'}
       </h2>
     </header>
   );

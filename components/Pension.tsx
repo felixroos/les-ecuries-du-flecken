@@ -46,22 +46,15 @@ export default function Pension() {
               <li>
                 Distribution d&apos;1 L d’orge aplati (ou aliment de la gamme St Hippolyt à un prix avantageux en
                 supplément) - la distribution d’un aliment fourni par le propriétaire est non facturé. Les CMV –
-                compléments minéraux et
+                compléments minéraux et vitaminés - sont à fournir par le propriétaire (une commande groupée - Reverdy-
+                est possible)
               </li>
             )}
             {de && (
               <li>
                 Fütterung mit 1l gequetschter Gerste (oder Futter der Marke St Hippolyt zum vergünstigten Preis)
-                Fütterung von eigenem Futter ist kostenlos
-              </li>
-            )}
-            {fr && (
-              <li>vitaminés - sont à fournir par le propriétaire (une commande groupée - Reverdy- est possible)</li>
-            )}
-            {de && (
-              <li>
-                Mineral-und Vitaminfutter werden vom Besitzer selbst besorgt (eine Gruppenbestellung bei Reverdy ist
-                möglich)
+                Fütterung von eigenem Futter ist kostenlos. Mineral-und Vitaminfutter werden vom Besitzer selbst besorgt
+                (eine Gruppenbestellung bei Reverdy ist möglich)
               </li>
             )}
             {fr && <li>Mise à disposition de sel pour chaque cheval</li>}
@@ -73,7 +66,7 @@ export default function Pension() {
             {fr && <li>Accès aux chemins de randonnées (badge pour accès au domaine fourni)</li>}
             {de && <li>Zugang zu Reitwegen im Wald (Ausweis für den Zugang zum Wald)</li>}
             {fr && <li>Sorties quotidiennes</li>}
-            {de && <li>Regelmäßige Ausritte</li>}
+            {de && <li>Täglicher Auslauf</li>}
           </ul>
 
           {fr && <p>Tous nos pensionnaires ont accès aux pâtures afin de vivre leur vie de cheval. </p>}
@@ -89,7 +82,7 @@ export default function Pension() {
             <p>
               Wir bieten unseren Pensionspferden mindestens 6 Monate Herdenhaltung auf der Weide im Jahr. Jedes neue
               Pferd wird langsam in die bestehende Herde integriert. Für Pferde mit körperlichen Problemen (Lahmheit,
-              Übergewicht, Hufrehe...) besteht die Möglichkeit auf begrenzeten Weidezugang in einer passenden Herde.
+              Übergewicht, Hufrehe...) besteht die Möglichkeit auf begrenzten Weidezugang in einer passenden Herde.
             </p>
           )}
           {fr && (
@@ -102,7 +95,7 @@ export default function Pension() {
           {de && (
             <p>
               Geht die milde Jahreszeit zu Ende (Mitte Oktober, Anfang November), ziehen die Pferde langsam in ihr
-              Winterquartier um. Je nach Wetter dürfen die Pferde zusammen auf den Paddock oder in die Halle.
+              Winterquartier um. Je nach Wetter dürfen die Pferde täglich zusammen auf den Paddock oder in die Halle.
             </p>
           )}
         </div>
@@ -148,11 +141,11 @@ export default function Pension() {
             {de && (
               <li>
                 Mineral- und Vitaminfutter oder eine spezeill an die Bedürfnisse des Pferdes (Alter,
-                Körperbau,...)angepasste Ernährung mit Futtermitteln von St Hippolyt
+                Körperbau...) angepasste Ernährung mit Futtermitteln von St Hippolyt
               </li>
             )}
             {fr && <li>Parage des sabots (max. 8 par an)</li>}
-            {de && <li>Beschneiden der Hufe (bis zu acht mal im Jahr)</li>}
+            {de && <li>Ausschneiden der Hufe (bis zu acht mal im Jahr)</li>}
             {fr && <li>Soins d&apos;entretien hebdomadaire (brossage, nettoyage des sabots)</li>}
             {de && <li>Wöchentliche Körperpflege (Bürsten, Hufe auskratzen...)</li>}
             {fr && <li>Soins vétérinaires (si blessures, traitements, ou suite à visite vétérinaire)</li>}

@@ -1,7 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
-create-next-app).
-
-## TODO
+# TODO
 
 - [ ] Header
   - [ ] Bild raussuchen
@@ -70,3 +67,7 @@ create-next-app).
   - https://alsaceacheval.com/gite-equestre/les-ecuries-du-flecken/
 - www.ecuries-du-flecken.com <-- kündigen und neu bestellen
 - https://www.reiten-weltweit.de/daten/wanderreiten-elsass-lothringen-vogesen-232.html
+
+TODO: https://github.com/cyrilwanner/next-optimized-images
+
+- [ ] "Située à" 2x
