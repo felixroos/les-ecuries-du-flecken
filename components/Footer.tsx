@@ -1,13 +1,16 @@
 import { MailIcon, MapIcon, PhoneIcon } from '@heroicons/react/outline';
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocales } from '../pages/api/useLocales';
 import Contact from './Contact';
+import Impressum from './Impressum';
+import Modal from './Modal';
 
 // SCEA LES ECURIES DU FLECKEN
 // SIRET 87946357800010
 
 export default function Footer() {
   const [fr, de] = useLocales();
+  const [open, setOpen] = useState(false);
   return (
     <footer className="bg-primary" aria-labelledby="footer-heading" id="footer">
       <h2 id="footer-heading" className="sr-only">
@@ -48,13 +51,21 @@ export default function Footer() {
                       facebook
                     </a>
                   </li>
+                  <li className="flex">
+                    <a onClick={() => setOpen(true)} className="cursor-pointer text-base text-gray-300 hover:text-white">
+                      Impressum &amp; Datenschutzerklärung
+                    </a>
+                  </li>
                 </ul>
               </div>
+              <Modal open={open} onClose={() => setOpen(false)}>
+                <Impressum />
+              </Modal>
               <div className="mt-12 md:mt-0">
                 {/* <ul role="list" className="mt-4 space-y-4">
                   <li className="flex">
-                    <a href="#" className="text-base text-gray-300 hover:text-white">
-                      Impressum
+                    <a onClick={() => setOpen(true)} className="cursor-pointer text-base text-gray-300 hover:text-white">
+                      Impressum &amp; Datenschutzerklärung
                     </a>
                   </li>
                 </ul> */}
