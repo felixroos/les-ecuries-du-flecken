@@ -39,16 +39,16 @@ export default function TrailRiding() {
           )}
           {de && (
             <p>
-              TODO: Etape-clé du circuit{' '}
+              Unser Hof ist eine Zwischenetappe auf dem Rundweg{' '}
               <a
                 href="https://alsaceacheval.com/itineraires/circuit-entre-lalsace-et-la-moselle/"
                 target="_blank"
                 rel="noreferrer"
               >
-                “Entre l’Alsace et la Moselle”
+                “Zwischen Elsass und Mosel”
               </a>
-              , vous pourrez vous émerveiller devant les ruines des châteaux, chevaucher sur des sentiers où beauté de
-              la nature et un monde enchanteur et féérique se côtoient.
+              . Entdecken und bewundern Sie die Ruinen alter Schlösser, zu Pferd auf Wegen wo sich in der Schönheit der
+              Natur eine märchenhafte Welt verbirgt.
             </p>
           )}
           {fr && (
@@ -59,13 +59,20 @@ export default function TrailRiding() {
           )}
           {de && (
             <p>
-              TODO: Hélène et Sylvain sont référents pour ce circuit élaboré par le comité régional de tourisme équestre
-              du Grand Est et le comité de tourisme équestre Alsace.
+              Hélène und Sylvain sind Ansprechpartner für den vom{' '}
+              <a href="https://www.crtegrandest.fr/" target="_blank" rel="noreferrer">
+                CRTE Grand-Est
+              </a>{' '}
+              und{' '}
+              <a href="https://www.crtegrandest.fr/" target="_blank" rel="noreferrer">
+                CDTE du Bas-Rhin
+              </a>{' '}
+              gestalteten Rundweg.
             </p>
           )}
           {fr && <p>Hébergement (box ou paddock – foin, eau et 1L de concentrés) 15€/cheval/nuit.</p>}
           {de && (
-            <p>Unterbringung und Verpflegung (Box oder Paddock- Heu, Wasser und 1l Kraftfutter) 15€/Pferd/Nacht</p>
+            <p>Unterbringung und Verpflegung (Box oder Paddock- Heu, Wasser und 1l Kraftfutter) 15€/Pferd/Nacht.</p>
           )}
           {fr && (
             <p>
@@ -77,10 +84,10 @@ export default function TrailRiding() {
           {de && (
             <p>
               Unsere Ferienwohnung steht derzeit leider nicht zur Verfügung, in Lembach laden jedoch zahlreiche Hotels
-              und Ferienwohnungen zur Übernachtung ein.
+              und Ferienwohnungen zur Übernachtung ein. Wir arbeiten derzeit daran bald auch Gäste in unserem Hof
+              beherbergen zu dürfen.
             </p>
           )}
-          {de && <p>TODO: Wir arbeiten derzeit daran, bald auch Gäste</p>}
           {fr && (
             <p>
               En attendant: possibilité de bivouac sur la ferme, et organisation de soirées à thème pour les grands
@@ -89,8 +96,7 @@ export default function TrailRiding() {
           )}
           {de && (
             <p>
-              TODO: En attendant: possibilité de bivouac sur la ferme, et organisation de soirées à thème pour les
-              grands groupes.
+              Bis dahin besteht die Möglichkeit auf unserem Gelände zu zelten. Für größere Gruppen organisieren wir gerne auch Themenabende.
             </p>
           )}
         </div>

@@ -35,7 +35,7 @@ export default function Pension() {
             {de && <li>Im Offenstall</li>}
           </ul>
           {fr && <p>Services compris:</p>}
-          {de && <p>Wir Leisten</p>}
+          {de && <p>Wir leisten</p>}
           <p></p>
           <ul>
             <li>
@@ -140,7 +140,7 @@ export default function Pension() {
             )}
             {de && (
               <li>
-                Mineral- und Vitaminfutter oder eine spezeill an die Bedürfnisse des Pferdes (Alter,
+                Mineral- und Vitaminfutter oder eine speziell an die Bedürfnisse des Pferdes (Alter,
                 Körperbau...) angepasste Ernährung mit Futtermitteln von St Hippolyt
               </li>
             )}
