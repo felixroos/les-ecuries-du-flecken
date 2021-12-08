@@ -22,10 +22,10 @@ export default function Pension() {
         <Heading>Pension</Heading>
         <div className="prose">
           <Img src={offenstall.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
-          {fr && <p>Pour chevaux et poneys, à partir de 260 € / mois</p>}
-          {de && <p>Für Pferde und Ponies, ab 260€/Monat</p>}
-          {fr && <p>Différents types d’hébergement (tous équipés d’abreuvoirs anti-gel):</p>}
-          {de && <p>Verschiedene Unterbringungsmöglichkeiten (alle ausgestattet mit frostsicheren Tränken)</p>}
+          {fr && <p>Pour chevaux et poneys, à partir de 260 € / mois.</p>}
+          {de && <p>Für Pferde und Ponies, ab 260€ / Monat.</p>}
+          {fr && <p>Différents types d’hébergement:</p>}
+          {de && <p>Verschiedene Unterbringungsmöglichkeiten </p>}
           <ul>
             {fr && <li>En box (au minimum 3,5m x 4m – pouvant aller jusqu’à 5m x 5m)</li>}
             {de && <li>In der Box (von mindestens 3,5m x 4m bis 5m x5m)</li>}
@@ -35,7 +35,7 @@ export default function Pension() {
             {de && <li>Im Offenstall</li>}
           </ul>
           {fr && <p>Services compris:</p>}
-          {de && <p>Wir leisten</p>}
+          {de && <p>Wir leisten:</p>}
           <p></p>
           <ul>
             <li>
@@ -59,6 +59,8 @@ export default function Pension() {
             )}
             {fr && <li>Mise à disposition de sel pour chaque cheval</li>}
             {de && <li>Salzlecksteine zur freien Verfügung </li>}
+            {fr && <li>Des abreuvoirs anti-gel</li>}
+            {de && <li>Frostsichere Tränken</li>}
             {fr && <li>Un casier individuel</li>}
             {de && <li>Persönlicher Spind</li>}
             {fr && <li>Accès au manège éclairé et mise à disposition de plots, barres, chandeliers...</li>}
@@ -121,8 +123,8 @@ export default function Pension() {
             </p>
           )}
           {/* <p>Une pension tout compris à un tarif préférentiel ! (renseignements au 06 99 93 64 34 )</p> */}
-          {fr && <p>Services compris :</p>}
-          {de && <p>Wir leisten</p>}
+          {fr && <p>Services compris:</p>}
+          {de && <p>Wir bieten:</p>}
           <ul>
             {fr && <li>Vermifuges deux fois par an</li>}
             {de && <li>Wurmkur 2 mal im Jahr</li>}
@@ -140,16 +142,16 @@ export default function Pension() {
             )}
             {de && (
               <li>
-                Mineral- und Vitaminfutter oder eine speziell an die Bedürfnisse des Pferdes (Alter,
-                Körperbau...) angepasste Ernährung mit Futtermitteln von St Hippolyt
+                Mineral- und Vitaminfutter oder eine speziell an die Bedürfnisse des Pferdes (Alter, Körperbau...)
+                angepasste Ernährung mit Futtermitteln von St Hippolyt
               </li>
             )}
-            {fr && <li>Parage des sabots (max. 8 par an)</li>}
-            {de && <li>Ausschneiden der Hufe (bis zu acht mal im Jahr)</li>}
+            {fr && <li>Parage des sabots max. 8 par an</li>}
+            {de && <li>Ausschneiden der Hufe bis zu acht mal im Jahr</li>}
             {fr && <li>Soins d&apos;entretien hebdomadaire (brossage, nettoyage des sabots)</li>}
             {de && <li>Wöchentliche Körperpflege (Bürsten, Hufe auskratzen...)</li>}
-            {fr && <li>Soins vétérinaires (si blessures, traitements, ou suite à visite vétérinaire)</li>}
-            {de && <li>Tierärztliche Versorgung (bei Verletzungen, Nachuntersuchungen oder anderen Behandlungen) </li>}
+            {fr && <li>Soins vétérinaires, si blessures, traitements, ou suite à visite vétérinaire</li>}
+            {de && <li>Tierärztliche Versorgung bei Verletzungen, Nachuntersuchungen oder anderen Behandlungen</li>}
             {fr && (
               <li>
                 Manipulation du poulain/jeune cheval (désensibilisation - renforcement positif) et travail éthologique
@@ -158,8 +160,8 @@ export default function Pension() {
             )}
             {de && (
               <li>
-                Arbeit mit dem Fohlen oder Jungpferd (Desenibilisierung-positive Verstärkung) Bodenarbeit (nach Bedarf-
-                Verladetraining, etc.)
+                Arbeit mit dem Fohlen oder Jungpferd (Desensibilisierung durch positive Verstärkung) Bodenarbeit nach
+                Bedarf, z.B. Verladetraining
               </li>
             )}
             {fr && <li>Nouvelles hebdomadaires de votre cheval (vidéos et photos)</li>}

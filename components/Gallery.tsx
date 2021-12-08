@@ -17,8 +17,8 @@ const files = [
   {
     title_fr: 'Box',
     title_de: 'Box',
-    description_fr: 'TBD',
-    description_de: 'TBD',
+    description_fr: '',
+    description_de: '',
     source: './img/gallery/box.jpg', // not from mail
     width: 1600,
     height: 1200,
@@ -51,10 +51,10 @@ const files = [
     height: 954,
   },
   {
-    title_fr: 'Foin de qualité supérieure',
-    title_de: 'Heu von hervorragender Qualität',
-    description_fr: 'entièrement produit sur la ferme',
-    description_de: 'zu 100% aus eigener Produktion',
+    title_fr: 'Foin produit sur la ferme',
+    title_de: 'Heu aus eigener Produktion',
+    description_fr: '',
+    description_de: '',
     source: './img/gallery/foinfaitmaison.jpg',
     width: 4160,
     height: 3120,
@@ -78,8 +78,8 @@ const files = [
     height: 3120,
   },
   {
-    title_fr: '?',
-    title_de: '',
+    title_fr: 'Calèche',
+    title_de: 'Kutsche',
     description_fr: '',
     description_de: '',
     source: './img/gallery/enjoykutsche.png',
@@ -144,10 +144,10 @@ export default function Gallery() {
               {fr && file.title_fr}
               {de && file.title_de}
             </p>
-            <p className="block text-sm font-medium text-gray-500 pointer-events-none">
+            {/* <p className="block text-sm font-medium text-gray-500 pointer-events-none">
               {fr && file.description_fr}
               {de && file.description_de}
-            </p>
+            </p> */}
           </li>
         ))}
       </ul>
