@@ -85,7 +85,16 @@ const files = [
     source: './img/gallery/enjoykutsche.png',
     width: 2448,
     height: 1961,
-  },
+  }/* ,
+  {
+    title_fr: 'Nos Vaches Vosgiennes',
+    title_de: 'Unsere Vogeser Kühe',
+    description_fr: 'Erica et Richelieu',
+    description_de: 'Erica und Richelieu',
+    source: './img/gallery/vosgienne.png',
+    width: 2448,
+    height: 1961,
+  }, */
 ];
 
 const images = files.map((file) => file.source);

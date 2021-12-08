@@ -1,5 +1,4 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
 import { useLocales } from '../pages/api/useLocales';
 
 // const img = require('../img/pferdis.jpg');
