@@ -69,5 +69,3 @@
 - https://www.reiten-weltweit.de/daten/wanderreiten-elsass-lothringen-vogesen-232.html
 
 TODO: https://github.com/cyrilwanner/next-optimized-images
-
-- [ ] "Située à" 2x
