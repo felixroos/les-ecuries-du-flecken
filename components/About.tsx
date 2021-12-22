@@ -1,5 +1,6 @@
 import { useRouter } from 'next/dist/client/router';
 import { useLocales } from '../pages/api/useLocales';
+import { FacebookIcon } from './FacebookIcon';
 
 const About = () => {
   const [fr, de] = useLocales();
@@ -21,6 +22,21 @@ const About = () => {
             de son compagnon à sabots. Le bien-être de votre cheval? Nous en faisons notre priorité.
           </p>
         )}
+        <div className="block w-full p-0 m-0 mt-4" style={{ maxWidth: '65ch' }}>
+          <a
+            href="https://www.facebook.com/Les-Ecuries-du-Flecken-107285571760209"
+            className="text-base flex items-center"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FacebookIcon className="h-8 w-8 text-gray-600 mr-2" aria-hidden="true" /> Suivez les Écuries du Flecken sur
+            Facebook
+          </a>
+          {/* <span className="w-full no-underline inline-flex justify-center py-3 px-4 border border-transparent shadow-sm font-medium rounded-md text-black bg-gray-200 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200">
+          {fr && 'Ou par telephone au 06 99 93 64 34'}
+          {de && 'Oder per Telefon unter +33 69993634'}
+        </span> */}
+        </div>
       </div>
     </div>
   );

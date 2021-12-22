@@ -19,7 +19,7 @@ export default function AboutMore() {
       <Centered>
         <Heading>
           {de && 'Über Uns'}
-          {fr && 'Présentation'}
+          {fr && 'Qui sommes-nous ?'}
         </Heading>
         <div className="prose">
           <Img src={image.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
@@ -67,21 +67,22 @@ export default function AboutMore() {
               Seither bilden wir uns stetig weiter: Hélène hat die Berufslizenz zur Pferdewirtin („Management et Gestion
               des entreprises de la filière équine“) und den Galop 7. Sylvain hat den Galop 5 im Fahren und absolviert
               zur Zeit seine Ausbildung zum Wanderrittführer. Während diverser Praktika im professionellen Bereich haben
-              wir unser Savoir-faire verfeinert, wie z.B. im Zuchtbetrieb des Haras de Hus und beim Horsemanship-Lehrgang bei
-              Andy Booth.
+              wir unser Savoir-faire verfeinert, wie z.B. im Zuchtbetrieb des Haras de Hus und beim
+              Horsemanship-Lehrgang bei Andy Booth.
             </p>
           )}
           {fr && (
             <p>
-              Compétiteurs dans notre jeunesse (CSO, concours complet, TREC), mais randonneurs dans l’âme, nous
-              partageons notre goût pour les chevaux, la nature, le terroir et la découverte de paysages à cheval.
+              Compétiteurs dans notre jeunesse (CSO, concours complet, TREC), mais randonneurs dans l’âme, nous aimons
+              découvrir des paysages à cheval et avons à coeur de partager notre passion des chevaux, de la nature et du
+              terroir.
             </p>
           )}
           {de && (
             <>
               <p>
-                In unserer Jugend haben wir unser Können auf Spring- und Vielseitigkeitsturnieren sowie Orientierungsritten
-                gemessen, im Herzen sind wir aber Wanderreiter.
+                In unserer Jugend haben wir unser Können auf Spring- und Vielseitigkeitsturnieren sowie
+                Orientierungsritten gemessen, im Herzen sind wir aber Wanderreiter.
               </p>
               <p>
                 Unsere Freude an Pferden und unsere Liebe zur Natur möchten wir mit Ihnen teilen und hoch zu Ross die

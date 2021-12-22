@@ -15,7 +15,7 @@ import enjoykutsche from '../public/img/gallery/enjoykutsche.png'; */
 
 const files = [
   {
-    title_fr: 'Box',
+    title_fr: 'Boxes',
     title_de: 'Box',
     description_fr: '',
     description_de: '',
@@ -60,7 +60,7 @@ const files = [
     height: 3120,
   },
   {
-    title_fr: 'Stabulation aménagée',
+    title_fr: 'Stabulation intérieure',
     title_de: 'Laufstall',
     description_fr: '',
     description_de: '',
@@ -69,7 +69,7 @@ const files = [
     height: 3120,
   },
   {
-    title_fr: 'Stabulation parcours',
+    title_fr: 'Stabulation ouverte sur parcours',
     title_de: 'Offenstall',
     description_fr: '',
     description_de: '',

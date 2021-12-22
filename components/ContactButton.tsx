@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocales } from '../pages/api/useLocales';
 
-export default function Header({ small }: any) {
+export default function Header({ small, children }: any) {
   {
     /* <Parallax className="overflow-hidden" y={[-50, 50]} tagOuter="figure"> */
   }
@@ -13,8 +13,7 @@ export default function Header({ small }: any) {
           href="mailto:lesecuriesduflecken@gmail.com"
           className="w-full mb-2 no-underline inline-flex justify-center py-3 px-4 border border-transparent shadow-sm font-medium rounded-md text-black bg-secondary hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
         >
-          {de && 'Jetzt kontaktieren'}
-          {fr && 'Contactez nous'}
+          {children}
         </a>
         {/* <span className="w-full no-underline inline-flex justify-center py-3 px-4 border border-transparent shadow-sm font-medium rounded-md text-black bg-gray-200 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200">
           {fr && 'Ou par telephone au 06 99 93 64 34'}

@@ -39,9 +39,8 @@ export default function Services() {
       >
         {fr && (
           <p>
-            Située dans le magnifique Parc naturel régional des Vosges du Nord, notre structure équestre labéllisée
-            “Tourisme Equestre” est le point de départ de nombreux sentiers de randonnées. N’hésitez pas à nous demander
-            conseil pour organiser votre séjour.
+            Notre structures équestre, labellisée &quot;Tourisme Èquestre&quot;, est le point de départ de nombreux
+            sentiers de randonnées. N’hésitez pas à nous demander conseil pour organiser votre séjour.
           </p>
         )}
         {de && (
@@ -92,7 +91,7 @@ export default function Services() {
         {fr && (
           <p>
             Pour chevaux et poneys, jeunes chevaux, poulains, poulinières, retraités.... Nous nous adaptons aux besoins
-            de votre compagnon. L&apos;idéal? C&apos;est d&apos;en discuter ensemble pour trouver la meilleure solution!
+            de votre compagnon. L&apos;idéal? C&apos;est d&apos;en discuter ensemble pour trouver la meilleure solution !
           </p>
         )}
         {de && (
@@ -138,8 +137,8 @@ export default function Services() {
               Fohlen.
             </p>
             <p>
-              Auf einem Umweg über die Weide können Sie außerdem unsere Vogeser Kühe bewundern. Unsere Wiederkäuer helfen uns beim
-              Instandhalten der Wiese und tragen so zu einer höheren Biodiversität bei.
+              Auf einem Umweg über die Weide können Sie außerdem unsere Vogeser Kühe bewundern. Unsere Wiederkäuer
+              helfen uns beim Instandhalten der Wiese und tragen so zu einer höheren Biodiversität bei.
             </p>
           </>
         )}

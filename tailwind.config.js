@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: '#323528',
         secondary: '#D0C0B0',
+        facebook: '#3479EA',
       },
     },
   },

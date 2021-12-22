@@ -22,14 +22,14 @@ export default function Pension() {
         <Heading>Pension</Heading>
         <div className="prose">
           <Img src={offenstall.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
-          {fr && <p>Pour chevaux et poneys, à partir de 260 € / mois.</p>}
-          {de && <p>Für Pferde und Ponies, ab 260€ / Monat.</p>}
+          {fr && <p>Pour chevaux et poneys, à partir de 250 € / mois.</p>}
+          {de && <p>Für Pferde und Ponies, ab 250€ / Monat.</p>}
           {fr && <p>Différents types d’hébergement:</p>}
           {de && <p>Verschiedene Unterbringungsmöglichkeiten </p>}
           <ul>
             {fr && <li>En box (au minimum 3,5m x 4m – pouvant aller jusqu’à 5m x 5m)</li>}
             {de && <li>In der Box (von mindestens 3,5m x 4m bis 5m x5m)</li>}
-            {fr && <li>En stabulation aménagée avec sciure et filet à foin</li>}
+            {fr && <li>En stabulation intérieure avec sciure et filet à foin</li>}
             {de && <li>Im Laufstall auf Späne mit Heunetz</li>}
             {fr && <li>En stabulation ouverte sur parcours</li>}
             {de && <li>Im Offenstall</li>}
@@ -46,7 +46,7 @@ export default function Pension() {
               <li>
                 Distribution d&apos;1 L d’orge aplati (ou aliment de la gamme St Hippolyt à un prix avantageux en
                 supplément) - la distribution d’un aliment fourni par le propriétaire est non facturé. Les CMV –
-                compléments minéraux et vitaminés - sont à fournir par le propriétaire (une commande groupée - Reverdy-
+                compléments minéraux et vitaminés - sont à fournir par le propriétaire (une commande groupée - Reverdy -
                 est possible)
               </li>
             )}
@@ -57,18 +57,18 @@ export default function Pension() {
                 (eine Gruppenbestellung bei Reverdy ist möglich)
               </li>
             )}
-            {fr && <li>Mise à disposition de sel pour chaque cheval</li>}
+            {fr && <li>Mise à disposition de bloc de sel pour chaque cheval</li>}
             {de && <li>Salzlecksteine zur freien Verfügung </li>}
-            {fr && <li>Des abreuvoirs anti-gel</li>}
+            {fr && <li>Abreuvoirs anti-gel</li>}
             {de && <li>Frostsichere Tränken</li>}
-            {fr && <li>Un casier individuel</li>}
+            {fr && <li>Casier individuel</li>}
             {de && <li>Persönlicher Spind</li>}
             {fr && <li>Accès au manège éclairé et mise à disposition de plots, barres, chandeliers...</li>}
             {de && <li>Zugang zur lichtdurchfluteten Reithalle mit Stangen und anderem Bodenarbeitszubehör</li>}
-            {fr && <li>Accès aux chemins de randonnées (badge pour accès au domaine fourni)</li>}
+            {fr && <li>Chemins de randonnées attenants á l&apos;écurie</li>}
             {de && <li>Zugang zu Reitwegen im Wald (Ausweis für den Zugang zum Wald)</li>}
-            {fr && <li>Sorties quotidiennes</li>}
-            {de && <li>Täglicher Auslauf</li>}
+            {fr && <li>Sorties quotidiennes en hiver</li>}
+            {de && <li>Täglicher Auslauf im Winter</li>}
           </ul>
 
           {fr && <p>Tous nos pensionnaires ont accès aux pâtures afin de vivre leur vie de cheval. </p>}
@@ -87,7 +87,7 @@ export default function Pension() {
               Übergewicht, Hufrehe...) besteht die Möglichkeit auf begrenzten Weidezugang in einer passenden Herde.
             </p>
           )}
-          {fr && (
+          {/* {fr && (
             <p>
               A la fin de la belle saison (mi-octobre, début novembre), les chevaux regagnent progressivement leurs
               quartiers d’hiver. Les sorties – comprises dans le prix de pension – sont quotidiennes en hiver (en
@@ -99,20 +99,23 @@ export default function Pension() {
               Geht die milde Jahreszeit zu Ende (Mitte Oktober, Anfang November), ziehen die Pferde langsam in ihr
               Winterquartier um. Je nach Wetter dürfen die Pferde täglich zusammen auf den Paddock oder in die Halle.
             </p>
-          )}
+          )} */}
         </div>
-        <ContactButton />
+        <ContactButton>
+          {de && 'Jetzt kontaktieren'}
+          {fr && 'Contactez nous'}
+        </ContactButton>
         <div className="prose">
           {fr && <h2>Pension retraite et pension poulains/jeunes chevaux</h2>}
           {de && <h2>Pension für Rentnerpferde oder Fohlen / Jungpferde</h2>}
           <Img src={jaziaschlafend.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
           {fr && (
             <p>
-              Vous souhaitez confier votre compagnon à quatre pattes afin qu’il soit entre de bonnes mains, accompagné
-              et bichonné pour une retraite paisible ? Ou bien, vous souhaitez que votre poulain – ou jeune cheval -
-              profite d&apos;une vie avec ses congénères, en troupeau pendant sa croissance ? Nous mettons notre
-              savoir-faire au service de votre animal, et avons exactement ce dont vous et, surtout, votre cheval avez
-              besoin.
+              Vous souhaitez nous confier votre compagnon à quatre pattes afin qu’il soit entre de bonnes mains,
+              accompagné et bichonné pour une retraite paisible ? Ou bien, vous souhaitez que votre poulain – ou jeune
+              cheval - profite d&apos;une vie avec ses congénères, en troupeau pendant sa croissance ? Nous mettons
+              notre savoir-faire au service de votre animal, et avons exactement ce dont vous et, surtout, votre cheval,
+              avez besoin.
             </p>
           )}
           {de && (
@@ -136,8 +139,8 @@ export default function Pension() {
             {de && <li>Heu nach Belieben (in Heunetzen, um die Mahlzeit auf den Tag zu verteilen)</li>}
             {fr && (
               <li>
-                Compléments minéraux et vitaminés. Et si besoin, en complément, alimentation adaptée aux besoins du
-                cheval (âge, corpulence, ...) de la gamme St Hippolyt.
+                Aliments adaptés aux besoins du cheval fournis (âge, corpulence, ...) de la gamme St Hippolyt.
+                Compléments minéraux et vitaminés (en supplément).
               </li>
             )}
             {de && (
@@ -150,8 +153,8 @@ export default function Pension() {
             {de && <li>Ausschneiden der Hufe bis zu acht mal im Jahr</li>}
             {fr && <li>Soins d&apos;entretien hebdomadaire (brossage, nettoyage des sabots)</li>}
             {de && <li>Wöchentliche Körperpflege (Bürsten, Hufe auskratzen...)</li>}
-            {fr && <li>Soins vétérinaires, si blessures, traitements, ou suite à visite vétérinaire</li>}
-            {de && <li>Tierärztliche Versorgung bei Verletzungen, Nachuntersuchungen oder anderen Behandlungen</li>}
+            {fr && <li>Soins vétérinaires</li>}
+            {de && <li>Tierärztliche Versorgung</li>}
             {fr && (
               <li>
                 Manipulation du poulain/jeune cheval (désensibilisation - renforcement positif) et travail éthologique
@@ -168,19 +171,16 @@ export default function Pension() {
             {de && <li>Wöchentlich Neuigkeiten in Form von Videos und Fotos</li>}
             {fr && (
               <li>
-                Hébergement en stabulation – parcours, avec accès au pré. Accès au minimum 6 mois dans l’année à la vie
-                en troupeau sur plusieurs hectares.
+                Hébergement en stabulation – parcours, ou stabulation intérieure avec accès au pré. Vie en groupe.
               </li>
             )}
-            {de && (
-              <li>
-                Unterbringung im Offenstall mit Zugang zur Koppel. Mindestens sechs Monate im Jahr Herdenhaltung auf
-                mehreren Hektar Weidefläche.{' '}
-              </li>
-            )}
+            {de && <li>Unterbringung im Offenstall mit Zugang zur Koppel. Leben in der Herde.</li>}
           </ul>
         </div>
-        <ContactButton />
+        <ContactButton>
+          {de && 'Preise auf Anfrage'}
+          {fr && 'Tarifs sur demande'}
+        </ContactButton>
         <div className="prose">
           {fr && <h2>Pension juments gestantes - poulinage</h2>}
           {de && <h2>Pension für trächtige Stuten -Abfohlüberwachung </h2>}
@@ -199,7 +199,10 @@ export default function Pension() {
             </p>
           )}
         </div>
-        <ContactButton />
+        <ContactButton>
+          {de && 'Preise auf Anfrage'}
+          {fr && 'Tarifs sur demande'}
+        </ContactButton>
       </Centered>
     </>
   );

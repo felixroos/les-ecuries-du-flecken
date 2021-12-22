@@ -16,9 +16,10 @@ export default function Menu() {
     ...(!de
       ? []
       : [
+          { label: 'Unser Hof', id: 'hof' },
           { label: 'Wanderreiten', id: 'wanderreiten' },
           { label: 'Pension', id: 'pension' },
-          { label: 'Unser Hof', id: 'hof' },
+          { label: 'Über Uns', id: 'about' },
           { label: 'Kontakt', id: 'footer' },
         ]),
     ...(!fr
@@ -27,6 +28,7 @@ export default function Menu() {
           { label: 'Nos Installations', id: 'hof' },
           { label: 'Tourisme Equestre', id: 'wanderreiten' },
           { label: 'Pension', id: 'pension' },
+          { label: 'Qui sommes-nous ?', id: 'about' },
           { label: 'Contact', id: 'footer' },
         ]),
   ];

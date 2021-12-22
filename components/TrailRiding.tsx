@@ -34,7 +34,7 @@ export default function TrailRiding() {
                 “Entre l’Alsace et la Moselle”
               </a>
               , vous pourrez vous émerveiller devant les ruines des châteaux, chevaucher sur des sentiers où beauté de
-              la nature et un monde enchanteur et féérique se côtoient.
+              la nature et féerie se côtoient.
             </p>
           )}
           {de && (
