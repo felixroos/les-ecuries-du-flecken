@@ -18,12 +18,7 @@ export default function Impressum() {
         lesecuriesduflecken@gmail.com
       </p>
       <h3>Website</h3>
-      <p>
-        Gestaltung und Programmierung:{' '}
-        <a href="https://github.com/felixroos" target="_blank" rel="noreferrer">
-          Felix Roos
-        </a>
-      </p>
+      <p>Gestaltung und Programmierung: Felix Roos</p>
       <h3>Allgemeine Datenschutzerklärung</h3>
       <p>
         Durch die Nutzung unserer Website erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäß
