@@ -6,7 +6,7 @@ import { isContext } from 'vm';
 import { useLocales } from '../pages/api/useLocales';
 import { LanguageSwitcher } from './Flags';
 import Img from './Img';
-import icon from '../public/img/horse-icon-27.png';
+import icon from '../public/img/logo2.png';
 
 //  className="flex items-center"
 
@@ -36,22 +36,22 @@ export default function Menu() {
     <div className="fixed w-full z-10">
       <Popover className="relative bg-white z-10">
         <div className="border-b-2 border-gray-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
-            <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-4">
+            <div className="flex justify-between items-center py-6 lg:justify-start lg:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1 items-center">
                 <a href="#" className="flex items-center">
-                  <span className="sr-only">Les Ecuries du Flecken</span>
+                  <span className="sr-only">Les Écuries du Flecken</span>
                   <Img className="h-8 w-auto sm:h-10" src={icon.src} alt="" width={8} height={8} />
-                  <h1 className="ml-2">Les Ecuries du Flecken</h1>
+                  <h1 className="ml-2 text-xl">Les Écuries du Flecken</h1>
                 </a>
               </div>
-              <div className="-mr-2 -my-2 md:hidden">
+              <div className="-mr-2 -my-2 lg:hidden">
                 <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <Popover.Group as="nav" className="hidden md:flex space-x-10 items-center">
+              <Popover.Group as="nav" className="hidden lg:flex space-x-10 items-center">
                 {navigation.map(({ label, id }, i) => (
                   <a
                     key={i}
@@ -77,7 +77,7 @@ export default function Menu() {
           >
             <Popover.Panel
               focus
-              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden"
             >
               {({ close }) => (
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
