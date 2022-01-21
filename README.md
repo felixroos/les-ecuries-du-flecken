@@ -1,17 +1,17 @@
 # TODO
 
-- [ ] Header
-  - [ ] Bild raussuchen
-  - [ ] Text
-  - [ ] Übersetzen (Reiten & Wandern im Elsass?)
-  - [ ] Logo?
-- [ ] Über uns
-  - [ ] KÜRZEN!
-  - [ ] move stuff to timeline?
+- [x] Header
+  - [x] Bild raussuchen
+  - [x] Text
+  - [x] Übersetzen (Reiten & Wandern im Elsass?)
+  - [x] Logo
+- [x] Über uns
+  - [x] kürzen
+  - [x] move stuff to timeline?
   - [x] soll da ein bild rein?
   - [x] Übersetzen
-- [ ] Tourisme équestre / Wanderreiten
-  - [ ] KÜRZEN!
+- [x] Tourisme équestre / Wanderreiten
+  - [x] kürzen
   - [x] vllt auch unterseite (cta)
   - [x] Bild raussuchen
   - [x] Übersetzen
@@ -19,23 +19,17 @@
   - [x] Textlänge ok
   - [x] Bild raussuchen
   - [x] Übersetzen
-- [ ] Unser Hof
+- [x] Unser Hof
   - [x] Bilder raussuchen
   - [x] Umbenennen in Galerie?
-  - [ ] Labels / Übersetzen
-- [ ] Historie
-  - [ ] soll das drinbleiben?
-  - [ ] wenn ja, was soll rein? (nicht mehr als 6 punkte)
-  - [ ] Übersetzen
+  - [x] Labels / Übersetzen
 - [x] anfahrt
 - [x] Partner
-- [ ] Kontaktformular
-  - [ ] ist das nötig?
-- [ ] Social Links
-  - [ ] noch was außer facebook?
+- [x] Kontaktformular
+  - [x] ist das nötig? nein
+- [x] Social Links
+  - [x] noch was außer facebook? nö
 - [ ] Domain
-- [ ] Budget klären
-  - [ ] schon ~16h gearbeitet
 
 ## Gallery
 
@@ -49,23 +43,3 @@
 - [x] Heu von hervorragender Qualität, zu 100% aus eigener Produktion
 - [x] Ecuries ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)
 - [x] Offene, gut durchlüftete, aber windgeschützte Stallungen (staubarm)
-
-## mehr?
-
-- [ ] Structure sous vidéosurveillance et présence 24h/24
-- [ ] Videoüberwachte Einrichtung 24h/7
-- [ ] Structure labellisée Centre de Tourisme Equestre
-- [ ] Betrieb ausgezeichnet mit dem Label Centre de Tourisme Equestre
-
-### bilder die zu klein sind
-
-- manegebarres
-- koppel
-
-- https://alsaceacheval.com/uploads/PDF/guide_tourisme_equestre_alsace_2016-2017.pdf aktualisieren?
-- https://alsaceacheval.com/wp-content/uploads/2021/11/Brochure-Alsace-a-cheval-2022-web.pdf <- www.ecuries-du-flecken.com
-  - https://alsaceacheval.com/gite-equestre/les-ecuries-du-flecken/
-- www.ecuries-du-flecken.com <-- kündigen und neu bestellen
-- https://www.reiten-weltweit.de/daten/wanderreiten-elsass-lothringen-vogesen-232.html
-
-TODO: https://github.com/cyrilwanner/next-optimized-images
