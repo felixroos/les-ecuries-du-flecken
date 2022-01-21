@@ -41,8 +41,8 @@ export default function Menu() {
               <div className="flex justify-start lg:w-0 lg:flex-1 items-center">
                 <a href="#" className="flex items-center">
                   <span className="sr-only">Les Écuries du Flecken</span>
-                  <Img className="h-8 w-auto sm:h-10" src={icon.src} alt="" width={8} height={8} />
-                  <h1 className="ml-2 text-xl">Les Écuries du Flecken</h1>
+                  <Img className="h-8 w-auto" src={icon.src} alt="" width={8} height={8} />
+                  <h1 className="ml-2 text-md">Les Écuries du Flecken</h1>
                 </a>
               </div>
               <div className="-mr-2 -my-2 lg:hidden">
@@ -51,7 +51,7 @@ export default function Menu() {
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <Popover.Group as="nav" className="hidden lg:flex space-x-10 items-center">
+              <Popover.Group as="nav" className="hidden lg:flex space-x-6 items-center">
                 {navigation.map(({ label, id }, i) => (
                   <a
                     key={i}
