@@ -1,6 +1,5 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: '/',
   /* i18n: {
     // These are all the locales you want to support in
     // your application
