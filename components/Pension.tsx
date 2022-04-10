@@ -46,8 +46,7 @@ export default function Pension() {
               <li>
                 Distribution d&apos;1 L d’orge aplati (ou aliment de la gamme St Hippolyt à un prix avantageux en
                 supplément) - la distribution d’un aliment fourni par le propriétaire est non facturé. Les CMV –
-                compléments minéraux et vitaminés - sont à fournir par le propriétaire (une commande groupée - Reverdy -
-                est possible)
+                compléments minéraux et vitaminés - sont à fournir par le propriétaire (une commande groupée possible)
               </li>
             )}
             {de && (
@@ -65,7 +64,7 @@ export default function Pension() {
             {de && <li>Persönlicher Spind</li>}
             {fr && <li>Accès au manège éclairé et mise à disposition de plots, barres, chandeliers...</li>}
             {de && <li>Zugang zur lichtdurchfluteten Reithalle mit Stangen und anderem Bodenarbeitszubehör</li>}
-            {fr && <li>Chemins de randonnées attenants á l&apos;écurie</li>}
+            {fr && <li>Chemins de randonnées attenants à l&apos;écurie</li>}
             {de && <li>Zugang zu Reitwegen im Wald (Ausweis für den Zugang zum Wald)</li>}
             {fr && <li>Sorties quotidiennes en hiver</li>}
             {de && <li>Täglicher Auslauf im Winter</li>}
@@ -112,7 +111,7 @@ export default function Pension() {
           {fr && (
             <p>
               Vous souhaitez nous confier votre compagnon à quatre pattes afin qu’il soit entre de bonnes mains,
-              accompagné et bichonné pour une retraite paisible ? Ou bien, vous souhaitez que votre poulain – ou jeune
+              accompagné et bichonné pour une retraite paisible ? Vous souhaitez que votre poulain – ou jeune
               cheval - profite d&apos;une vie avec ses congénères, en troupeau pendant sa croissance ? Nous mettons
               notre savoir-faire au service de votre animal, et avons exactement ce dont vous et, surtout, votre cheval,
               avez besoin.
