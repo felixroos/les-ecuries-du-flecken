@@ -19,7 +19,7 @@ export default function TrailRiding() {
       <Centered>
         <Heading>
           {de && 'Wanderreiten'}
-          {fr && 'Tourisme Equestre'}
+          {fr && 'Tourisme Équestre'}
         </Heading>
         <div className="prose">
           <Img src={wanderreiten2.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />

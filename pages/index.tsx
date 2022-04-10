@@ -71,12 +71,12 @@ export default function Home() {
               <li>Manège éclairé avec barres, chandeliers, plots, …</li>
               <li>Paddocks</li>
               <li>Douche et aire de pansage</li>
-              <li>Structure labellisée Tourisme Equestre</li>
+              <li>Structure labellisée Tourisme Équestre</li>
               <li>Plusieurs hectares de pâtures vallonées et clôturées (3 fils électrifiés sur secteur)</li>
               <li>Foin de qualité supérieure entièrement produit sur la ferme</li>
               <li>Structure sous vidéosurveillance et présence 24h/24</li>
               <li>
-                Ecuries ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)
+                Écuries ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)
               </li>
             </ul>
           </Slim> */}

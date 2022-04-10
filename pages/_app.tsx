@@ -9,17 +9,17 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        titleTemplate="Les Ecuries du Flecken"
+        titleTemplate="Les Écuries du Flecken"
         description={fr ? 'Randonner à cheval en Alsace' : 'Wanderreiten im Elsass'}
         openGraph={{
-          title: 'Les Ecuries du Flecken',
+          title: 'Les Écuries du Flecken',
           description: fr ? 'Randonner à cheval en Alsace.' : 'Wanderreiten im Elsass.',
           images: [
             {
               url: './img/header2.jpg.webp',
               width: 1296,
               height: 862,
-              alt: 'Les Ecuries du Flecken',
+              alt: 'Les Écuries du Flecken',
             },
           ],
         }}

@@ -95,7 +95,7 @@ export default function Footer() {
             </a>
           </div> */}
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; {new Date().getFullYear()} Les Ecuries du Flecken
+            &copy; {new Date().getFullYear()} Les Écuries du Flecken
           </p>
         </div>
       </div>

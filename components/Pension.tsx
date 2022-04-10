@@ -149,7 +149,7 @@ export default function Pension() {
                 angepasste Ernährung mit Futtermitteln von St Hippolyt
               </li>
             )}
-            {fr && <li>Parage des sabots max. 8 par an</li>}
+            {fr && <li>Parage des sabots max. 8 fois par an</li>}
             {de && <li>Ausschneiden der Hufe bis zu acht mal im Jahr</li>}
             {fr && <li>Soins d&apos;entretien hebdomadaire (brossage, nettoyage des sabots)</li>}
             {de && <li>Wöchentliche Körperpflege (Bürsten, Hufe auskratzen...)</li>}

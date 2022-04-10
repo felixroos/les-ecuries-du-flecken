@@ -3,7 +3,7 @@ export default function Impressum() {
     <div className="prose">
       <h3>Impressum</h3>
       <p>
-        SCEA Les Ecuries du Flecken
+        SCEA Les Écuries du Flecken
         <br />
         SIRET 87946357800010
         <br />

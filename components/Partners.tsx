@@ -16,7 +16,7 @@ const partners = [
     url: 'https://www.crtegrandest.fr/',
   },
   {
-    name: 'Tourisme Equestre Bas-Rhin',
+    name: 'Tourisme Équestre Bas-Rhin',
     logo: logotourismeequestre.src,
     url: 'https://alsaceacheval.com/',
   },

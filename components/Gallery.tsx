@@ -15,7 +15,7 @@ const files = [
     height: 1200,
   },
   {
-    title_fr: 'Ecuries',
+    title_fr: 'Écuries',
     title_de: 'Ställe',
     description_fr: 'ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)',
     description_de: 'Offen, gut durchlüftet, aber windgeschützt (staubarm)',

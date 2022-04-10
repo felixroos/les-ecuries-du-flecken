@@ -19,7 +19,7 @@ export default function Header({ small }: any) {
       <h1 className="text-black text-4xl md:text-5xl text-primary">Les Écuries du Flecken</h1>
       <h2 className="text-2xl md:text-3xl text-primary">
         {de && 'Wanderreiten & Pferdepension im Elsass'}
-        {fr && 'Pension et Tourisme Èquestre en Alsace'}
+        {fr && 'Pension et Tourisme Équestre en Alsace'}
       </h2>
     </header>
   );
@@ -35,7 +35,7 @@ export default function Header({ small }: any) {
   <h1 className="text-4xl md:text-5xl text-primary">Les Écuries du Flecken</h1>
   <h2 className="text-2xl md:text-3xl text-primary">
     {de && 'Wanderreiten & Pferdepension im Elsass'}
-    {fr && 'Pension et Tourisme Èquestre en Alsace'}
+    {fr && 'Pension et Tourisme Équestre en Alsace'}
   </h2>
 </div>
 </header> */

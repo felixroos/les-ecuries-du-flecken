@@ -39,14 +39,14 @@ export default function Services() {
       >
         {fr && (
           <p>
-            Notre structures équestre, labellisée &quot;Tourisme Èquestre&quot;, est le point de départ de nombreux
+            Notre structures équestre, labellisée &quot;Tourisme Équestre&quot;, est le point de départ de nombreux
             sentiers de randonnées. N’hésitez pas à nous demander conseil pour organiser votre séjour.
           </p>
         )}
         {de && (
           <p>
             Gelegen im Herzen des UNESCO-Biosphärenreservats Pfälzerwald-Nordvogesen ist unser mit dem „Centre de
-            Tourisme Equestre“-Label ausgezeichneter Hof Ausgangspunkt für viele Wandertouren. Fragen Sie uns bei der
+            Tourisme Équestre“-Label ausgezeichneter Hof Ausgangspunkt für viele Wandertouren. Fragen Sie uns bei der
             Planung Ihres Wanderritts gerne um Rat!
           </p>
         )}
@@ -91,7 +91,7 @@ export default function Services() {
         {fr && (
           <p>
             Pour chevaux et poneys, jeunes chevaux, poulains, poulinières, retraités.... Nous nous adaptons aux besoins
-            de votre compagnon. L&apos;idéal? C&apos;est d&apos;en discuter ensemble pour trouver la meilleure solution !
+            de votre compagnon. L&apos;idéal? C&apos;est d&apos;en discuter ensemble pour trouver la meilleure solution!
           </p>
         )}
         {de && (

@@ -26,7 +26,7 @@ export default function AboutMore() {
           {fr && (
             <>
               <p>
-                Les Ecuries du Flecken ont été rachetées en décembre 2019 par Hélène et Sylvain. Depuis, de nombreuses
+                Les Écuries du Flecken ont été rachetées en décembre 2019 par Hélène et Sylvain. Depuis, de nombreuses
                 améliorations ont été apportées, et plusieurs projets s’apprêtent encore à voir le jour.
               </p>
               <p>
@@ -38,7 +38,7 @@ export default function AboutMore() {
           )}
           {de && (
             <p>
-              Im Dezember 2019 haben Hélène und Sylvain die Ecuries du Flecken übernommen. Seitdem wurden bereits einige
+              Im Dezember 2019 haben Hélène und Sylvain die Écuries du Flecken übernommen. Seitdem wurden bereits einige
               Verbesserungen vorgenommen und viele neue Projekte stehen noch an. Das bis dahin bestehende System der
               permanenten Einstreu wurde eingstellt, die Stallungen neu durchdacht und ein neuer Offenstall kam dazu.
               Vor Kurzem wurde der Hallenboden gänzlich erneuert.
