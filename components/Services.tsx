@@ -3,9 +3,9 @@ import Heading from './Heading';
 import Anchor from './Anchor';
 import { useLocales } from '../pages/api/useLocales';
 import Img from './Img';
-import wanderreiten from '../public/img/wanderreiten.png';
-import box from '../public/img/gallery/box.jpg';
-import cocosaddled from '../public/img/cocosaddled.jpg';
+import wanderreiten from '../public/img/wanderreiten.jpg.webp';
+import box from '../public/img/gallery/box.jpg.webp';
+import cocosaddled from '../public/img/cocosaddled.jpg.webp';
 
 const Service = ({ heading, children, className, id }: any) => (
   <>

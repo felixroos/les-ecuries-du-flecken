@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export -o docs && cp .nojekyll docs",
-    "start": "next start",
+    "start": "next start",    
+    "img-resize": "node ./img-resize.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -29,6 +30,7 @@
     "eslint-config-next": "11.1.2",
     "http-server": "^14.1.0",
     "postcss": "^8.3.8",
+    "sharp": "^0.30.3",
     "tailwindcss": "^2.2.15",
     "typescript": "^4.4.3"
   }

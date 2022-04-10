@@ -13,7 +13,7 @@ export default function Header({ small }: any) {
       className="px-6 md:text-right pt-4 md:pt-8 bg-bottom bg-left bg-cover bg-scroll xl:bg-fixed"
       style={{
         height: small ? '280px' : '600px',
-        backgroundImage: `url(./img/header2.jpg)`,
+        backgroundImage: `url(./img/header2.jpg.webp)`,
       }}
     >
       <h1 className="text-black text-4xl md:text-5xl text-primary">Les Écuries du Flecken</h1>
@@ -29,7 +29,7 @@ export default function Header({ small }: any) {
 {
   /* <header style={{ height: small ? '280px' : '600px' }} className="overflow-hidden relative">
 <div className="absolute -top-32 aspect-auto h-full w-[1280] h-[933]">
-  <Image src="/img/header2.jpg" alt="Les Écuries du Flecken" width={1280} height={933} />
+  <Image src="/img/header2.jpg.webp" alt="Les Écuries du Flecken" width={1280} height={933} />
 </div>
 <div className="px-6 md:text-right pt-4 md:pt-8 absolute top-0 right-0">
   <h1 className="text-4xl md:text-5xl text-primary">Les Écuries du Flecken</h1>

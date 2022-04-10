@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
           description: fr ? 'Randonner à cheval en Alsace.' : 'Wanderreiten im Elsass.',
           images: [
             {
-              url: './img/header2.jpg',
+              url: './img/header2.jpg.webp',
               width: 1296,
               height: 862,
               alt: 'Les Ecuries du Flecken',

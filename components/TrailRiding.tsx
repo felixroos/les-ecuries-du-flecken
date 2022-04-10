@@ -4,7 +4,7 @@ import Anchor from './Anchor';
 import ContactButton from './ContactButton';
 import Heading from './Heading';
 import Img from './Img';
-import wanderreiten2 from '../public/img/wanderreiten2.png';
+import wanderreiten2 from '../public/img/wanderreiten2.jpg.webp';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;

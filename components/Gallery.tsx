@@ -4,22 +4,13 @@ import 'react-image-lightbox/style.css'; // This only needs to be imported once 
 import React, { useState } from 'react';
 import Img from './Img';
 
-/* import boxenimherbst from '../public/img/gallery/boxenimherbst.png';
-import box from '../public/img/gallery/box.jpg';
-import manegebarres from '../public/img/gallery/manegebarres.jpg';
-import koppel from '../public/img/gallery/koppel.jpg';
-import foinfaitmaison from '../public/img/gallery/foinfaitmaison.jpg';
-import laufstall from '../public/img/gallery/laufstall.jpg';
-import halleundoffenstallaussicht from '../public/img/gallery/halleundoffenstallaussicht.jpg';
-import enjoykutsche from '../public/img/gallery/enjoykutsche.png'; */
-
 const files = [
   {
     title_fr: 'Boxes',
     title_de: 'Box',
     description_fr: '',
     description_de: '',
-    source: './img/gallery/box.jpg', // not from mail
+    source: './img/gallery/box.jpg.webp', // not from mail
     width: 1600,
     height: 1200,
   },
@@ -28,7 +19,7 @@ const files = [
     title_de: 'Ställe',
     description_fr: 'ouvertes, protégées du vent, mais avec une bonne circulation de l’air (moins de poussière)',
     description_de: 'Offen, gut durchlüftet, aber windgeschützt (staubarm)',
-    source: './img/gallery/boxenimherbst.png',
+    source: './img/gallery/boxenimherbst.png.webp',
     width: 2860,
     height: 2299,
   },
@@ -37,7 +28,7 @@ const files = [
     title_de: 'Lichtdurchflutete Halle',
     description_fr: 'avec barres, chandeliers, plots…',
     description_de: 'mit Stangen, Hütchen und anderem Bodenarbeitszubehör',
-    source: './img/gallery/manegebarres.jpg',
+    source: './img/gallery/manegebarres.jpg.webp',
     width: 960,
     height: 720,
   },
@@ -46,7 +37,7 @@ const files = [
     title_de: 'Mehrere Hektar hügeliger Weiden',
     description_fr: 'vallonées et clôturées 3 fils électrifiés sur secteur',
     description_de: ' mit Elektrozaun 3 Litzen',
-    source: './img/gallery/koppel.jpg',
+    source: './img/gallery/koppel.jpg.webp',
     width: 2016,
     height: 954,
   },
@@ -55,7 +46,7 @@ const files = [
     title_de: 'Heu aus eigener Produktion',
     description_fr: '',
     description_de: '',
-    source: './img/gallery/foinfaitmaison.jpg',
+    source: './img/gallery/foinfaitmaison.jpg.webp',
     width: 4160,
     height: 3120,
   },
@@ -64,7 +55,7 @@ const files = [
     title_de: 'Laufstall',
     description_fr: '',
     description_de: '',
-    source: './img/gallery/laufstall.jpg',
+    source: './img/gallery/laufstall.jpg.webp',
     width: 4160,
     height: 3120,
   },
@@ -73,7 +64,7 @@ const files = [
     title_de: 'Offenstall',
     description_fr: '',
     description_de: '',
-    source: './img/gallery/halleundoffenstallaussicht.jpg',
+    source: './img/gallery/halleundoffenstallaussicht.jpg.webp',
     width: 4160,
     height: 3120,
   },
@@ -82,7 +73,7 @@ const files = [
     title_de: 'Kutsche',
     description_fr: '',
     description_de: '',
-    source: './img/gallery/enjoykutsche.png',
+    source: './img/gallery/enjoykutsche.png.webp',
     width: 2448,
     height: 1961,
   }/* ,
@@ -91,7 +82,7 @@ const files = [
     title_de: 'Unsere Vogeser Kühe',
     description_fr: 'Erica et Richelieu',
     description_de: 'Erica und Richelieu',
-    source: './img/gallery/vosgienne.png',
+    source: './img/gallery/vosgienne.png.webp',
     width: 2448,
     height: 1961,
   }, */

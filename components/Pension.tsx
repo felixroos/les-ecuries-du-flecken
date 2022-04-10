@@ -4,9 +4,9 @@ import Anchor from './Anchor';
 import ContactButton from './ContactButton';
 import Heading from './Heading';
 import Img from './Img';
-import offenstall from '../public/img/offenstall.png';
-import jaziaschlafend from '../public/img/jaziaschlafend.png';
-import enjoy from '../public//img/enjoy.jpg';
+import offenstall from '../public/img/offenstall.jpg.webp';
+import jaziaschlafend from '../public/img/jaziaschlafend.jpg.webp';
+import enjoy from '../public//img/enjoy.jpg.webp';
 
 const Spacer = () => <div className="py-4 md:py-6"></div>;
 const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`} />;

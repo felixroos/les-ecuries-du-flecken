@@ -9,7 +9,7 @@ const Divider = () => <div className={`border-b-2 border-gray-100 py-2 md:py-6`}
 const Centered = ({ children }) => <div className="flex flex-col md:items-center">{children}</div>;
 const Slim = ({ children }) => <div className="max-w-lg">{children}</div>;
 
-import image from '../public/img/helenesylvainuberuns_cropped2.png';
+import image from '../public/img/helenesylvainuberuns_cropped2.jpg.webp';
 
 export default function AboutMore() {
   const [fr, de] = useLocales();

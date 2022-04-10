@@ -1,8 +1,8 @@
 import React from 'react';
 import Img from './Img';
 
-import logoCRTEgrandest from '../public/img/partners/logoCRTEgrandest.png';
-import logotourismeequestre from '../public/img/partners/logotourismeequestre.jpg';
+import logoCRTEgrandest from '../public/img/partners/logoCRTEgrandest.png.webp';
+import logotourismeequestre from '../public/img/partners/logotourismeequestre.jpg.webp';
 
 const partners = [
   /* {

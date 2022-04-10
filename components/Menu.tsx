@@ -6,7 +6,7 @@ import { isContext } from 'vm';
 import { useLocales } from '../pages/api/useLocales';
 import { LanguageSwitcher } from './Flags';
 import Img from './Img';
-import icon from '../public/img/logo2.png';
+import icon from '../public/img/logo2.png.webp';
 
 //  className="flex items-center"
 
