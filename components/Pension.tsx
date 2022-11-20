@@ -22,8 +22,8 @@ export default function Pension() {
         <Heading>Pension</Heading>
         <div className="prose">
           <Img src={offenstall.src} className="rounded-xl mx-auto mb-4" alt="" layout="responsive" />
-          {fr && <p>Pour chevaux et poneys, à partir de 250 € / mois.</p>}
-          {de && <p>Für Pferde und Ponies, ab 250€ / Monat.</p>}
+          {fr && <p>Pour chevaux et poneys, à partir de 280 € / mois.</p>}
+          {de && <p>Für Pferde und Ponies, ab 280€ / Monat.</p>}
           {fr && <p>Différents types d’hébergement:</p>}
           {de && <p>Verschiedene Unterbringungsmöglichkeiten </p>}
           <ul>
